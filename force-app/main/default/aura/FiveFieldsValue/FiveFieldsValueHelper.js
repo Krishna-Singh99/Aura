@@ -1,0 +1,6 @@
+({
+  validateFields : function (component,field) {
+        
+   
+  }
+})

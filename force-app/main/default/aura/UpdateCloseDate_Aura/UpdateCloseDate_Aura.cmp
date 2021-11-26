@@ -1,0 +1,7 @@
+<aura:component controller="UpdateCloseDate" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global" >
+    
+    <aura:attribute name="onnlyClsDate" type="date"/>
+    
+    <lightning:input type="date"  aura:id="clsdate" label="Date" class="slds-input slds-form-element__label text" value="{!v.onnlyClsDate}" required="true"/>
+    <br/><lightning:button variant="success" label="Update CloseDate" title="Brand action" onclick="{! c.updateCloseDate }" />
+</aura:component>

@@ -1,0 +1,60 @@
+<apex:page standardController="Account" standardStylesheets="false">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"/>
+        <script>
+        function cnfrm(){
+            var inputAccId = document.getElementById('{!$Component.cnfrmid.item}');
+            if(inputAccId.value != ''){     
+                var msg = 'Are you confirm To Insert  '+ inputAccId.value;
+                return confirm(msg);
+            }else{
+                alert('Please Insert Name First');
+                return false;
+                
+            }
+            return false;
+        }
+        
+        </script>
+        <style>
+            body{
+            background-color: #F2F2F2;
+            }
+            .tabl{
+            background-color: white;
+            font-family: 'Lato', sans-serif; 
+            text-align : center;
+            font-size: 20px;
+            color:black;
+            padding: 2px 11px 16px 2px;
+            }
+            .inpt{
+            padding: 2px 11px 16px 2px;
+            }
+            .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            }
+            
+            .button:hover {background-color: #3e8e41}
+            
+            .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            }
+        </style>
+    </head>
+    <apex:form id="cnfrmid">
+        <sapn class="tabl"> Enter Account name </sapn>&nbsp;&nbsp;&nbsp;<apex:inputText value="{!account.name}" id="item" required="True" styleClass="inpt"/><br/><br/>
+        <apex:commandButton value="Save" action="{!Save}" onclick="return cnfrm()" styleclass="button"/>
+    </apex:form>
+</apex:page>

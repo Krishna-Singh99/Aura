@@ -1,0 +1,22 @@
+<apex:page standardController="opportunity" standardStylesheets="false" extensions="Opportunity_Date" >
+       <head>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"/>
+        <style>
+            body{
+            background-color: #F2F2F2;
+            }
+            .header{
+            font-family: 'Lato', sans-serif;
+            text-align : center;
+            font-size: 40px;
+            
+            }
+          
+        </style>
+    </head>
+   <div class="header"> 
+       <apex:outputpanel rendered="{!counter}" >Your Opportunity id : {!opportunity.id} is Going to expire after 4 days. </apex:outputpanel>
+    </div>
+    
+</apex:page>

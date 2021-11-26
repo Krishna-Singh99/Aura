@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.THIS {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.THIS{
+    background: #f5f6fa;
+}
+.THIS .slct{
+    position: fixed;
+    width:100%;
+}
+.THIS .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    overflow : hidden;
+}
+.THIS .wrapper{
+    background-color: rgb(5, 68, 104);  
+position: fixed;  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 30px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;  
+    display: inline-block;
+    position:absolute;
+}
+@media (max-width: 600px) {
+  .THIS .sidebar {
+    display: none;
+  }
+    .THIS .slds-grid {
+        display: none;
+    }
+    .THIS .slds-wrap {
+        display: none;
+    }
+}
+   .THIS .slds-p-around_x-large{
+     position: fixed;
+    
+}
+.THIS .sep{
+    width:700px;
+    margin:auto;
+    overflow:hidden;
+    position: relative;
+}
+.THIS .Error{
+   
+    width: 50%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: orange;
+    border-radius: 2px;
+    padding: 1% 2%;
+    text-align: left;
+    /**/
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.THIS .cross-btn{
+    float: right;
+    cursor: pointer;
+    border:2px solid white;
+    border-radius: 50%;
+    padding: 0 7px;
+}
+.THIS.error_container{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 1%;
+}
+.THIS .Success{
+   
+    width: 50%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: green;
+    border-radius: 2px;
+    padding: 1% 2%;
+    text-align: left;
+    /**/
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.THIS .cross-btn:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}

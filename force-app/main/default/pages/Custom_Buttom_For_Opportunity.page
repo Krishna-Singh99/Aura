@@ -1,0 +1,55 @@
+<apex:page standardController="Opportunity" extensions="Custom_Buttom_class_ForOpp" >
+    <head>
+        <script>
+        function myFunction() {
+  var x = document.getElementById('{!$Component.oppId.item}');
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+        </script>
+        <style>
+              body{
+            background-color: #F2F2F2;
+            }
+            .tabl{
+            background-color: white;
+            font-family: 'Lato', sans-serif; 
+            text-align : center;
+            font-size: 20px;
+            color:black;
+            padding: 2px 11px 16px 2px;
+            }
+            .inpt{
+            padding: 2px 11px 16px 2px;
+            }
+            .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            }
+            
+            .button:hover {background-color: #3e8e41}
+            
+            .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            }
+        </style>
+    </head>
+  <apex:form id="oppId">
+    <sapn class="tabl"> Enter Opportunity name </sapn>&nbsp;&nbsp;&nbsp;<apex:inputText value="{!Opportunity.name}" id="item" required="True" styleClass="inpt"/><br/><br/>
+      <apex:commandButton value="Test" action="{!check}" styleClass="button" rendered="{!counter}" id="btn"/>
+
+  </apex:form>
+</apex:page>

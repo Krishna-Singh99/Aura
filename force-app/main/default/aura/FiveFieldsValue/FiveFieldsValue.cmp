@@ -1,0 +1,21 @@
+<aura:component controller="AccountControllerforAura">
+ 
+  <aura:attribute name="items" type="Account[]" />
+  <aura:attribute name="er" type="boolean" default="false" />
+  <aura:attribute name="newItem" type="Account" default="{'sobjectType':'Account', 'Name': '', 'Phone': '',  'BillingCountry': '', 'ShippingAddress': '' , 'Description': ''}" />  <div class="container">
+    <lightning:input type="text" aura:id="name" label="Name" placeholder="eg. Smith" value="{!v.newItem.Name}" />
+    <lightning:input type="Number" aura:id="Phone" value="{!v.newItem.Phone}" label="Phone"  />
+    <lightning:input type="text" aura:id="BillingCountry" value="{!v.newItem.BillingCountry}"  label="BillingCountry" />
+    <lightning:input type="text" aura:id="ShippingAddress" value="{!v.newItem.ShippingAddress}" label="ShippingAddress" />
+    <lightning:input type="text" aura:id="Description" value="{!v.newItem.Description}" label="Description " />
+  </div>
+  <br />
+  
+  <div class="container">
+    <lightning:button variant="brand" label="Save" title="Brand action" onclick="{!c.savecontact}"/>
+    <lightning:button variant="brand" label="Cancel" title="Brand action" onclick="{!c.doCancel}"/>
+  </div>
+       <aura:iteration items="{!v.items}" var="ac">
+                <option value="{!ac}"><b>Inserted Account Name As :</b>  {!ac}</option>
+            </aura:iteration>
+</aura:component>

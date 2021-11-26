@@ -1,0 +1,25 @@
+<template>
+  <lightning-card>
+    <h3 slot="title">
+      <lightning-icon
+        icon-name="standard:contact"
+        size="small"
+      ></lightning-icon>
+      Contact
+    </h3>
+    <lightning-layout>
+      <lightning-layout-item size="12" padding="around-large">
+        <div class="custom-box">
+          <template if:true={records}>
+            <lightning-datatable
+              data={records}
+              columns={columns}
+              key-field="id"
+            >
+            </lightning-datatable>
+          </template>
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>

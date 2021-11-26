@@ -1,0 +1,49 @@
+<apex:page Controller="Textboxsearch" standardStylesheets="false">
+    <apex:pageBlock title="AccountFetch">
+        <head>
+            <style>
+                body{
+                background-color: #93C2C8;
+                
+                }
+                .datatbl{
+                width:100%;
+                }
+                .cmdbtn{
+                background-color: #4CAF50;
+                border: none;
+                color: white; 
+                margin-right:16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                }
+                .hdr{
+                 box-sizing: border-box;
+                }
+                .accid{
+                  box-sizing: border-box;
+                border: 1px solid black;
+                font-family: "Times New Roman", Times, serif;
+                text-align : center;
+                 font-size: 20px;
+                }
+            </style>    
+        </head>
+        <apex:form >
+            <apex:inputText value="{!AccountName}" id="data"/>&nbsp;&nbsp;
+            <apex:commandButton styleClass="cmdbtn" value="Search by Name" action="{!search_account}"/>          
+            <apex:commandButton styleClass="cmdbtn" value="Search By Phone" action="{!searchby_phone}"/>
+            <apex:commandButton styleClass="cmdbtn" value="Search By BillingPostalCode" action="{!searchby_PostalCode}"/>
+            <apex:commandButton styleClass="cmdbtn" value="Clear Search" action="{!clear_search}"/>
+            <apex:dataTable value="{!accList}" var="setdata" Styleclass="datatbl">
+                <apex:column headerValue="id" styleClass="accid">{!setdata.id} </apex:column>
+                <apex:column styleClass="accid" headerValue="Name">{!setdata.Name} </apex:column>
+                <apex:column styleClass="accid" headerValue="BillingPostalCode">{!setdata.BillingPostalCode} </apex:column>
+                <apex:column styleClass="accid" headerValue="Phone">{!setdata.phone} </apex:column>
+            </apex:dataTable> 
+        </apex:form>
+    </apex:pageBlock>
+    
+</apex:page>

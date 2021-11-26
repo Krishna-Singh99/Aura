@@ -1,0 +1,4 @@
+<aura:event type="component" description="Event template" >
+    <aura:attribute name="Amount" type="String" default = "0" />
+    <aura:attribute name="Transaction" type="String" />
+</aura:event>

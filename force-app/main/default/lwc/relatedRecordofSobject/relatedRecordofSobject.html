@@ -1,0 +1,15 @@
+<template> 
+    <lightning-card title="Account" icon-name="standard:account" >
+        <template if:true={contact.data}>
+            <div class="slds-m-around_medium">
+                <p data-value="Account"><lightning-formatted-text value={accName}></lightning-formatted-text></p>
+                
+            </div>
+        </template>  
+         <lightning-record-view-form record-id={accid} object-api-name="Account">
+           
+                    <lightning-output-field field-name="Active__c"></lightning-output-field>  
+                    <lightning-output-field field-name="Count__c"></lightning-output-field>                  
+                </lightning-record-view-form>     
+    </lightning-card>
+</template>

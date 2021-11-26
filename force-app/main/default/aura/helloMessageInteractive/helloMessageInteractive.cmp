@@ -1,0 +1,8 @@
+<aura:component >
+     <aura:attribute name="message" type="String"/>
+    <p>Message of the Day : {!v.message}</p>
+    <div>
+    <Lightning:button  variant="brand" label = "Click for Good News" onclick = "{!c.handlerClick}" class="my-brand"/>
+         <Lightning:button label = "Click for Bad News" onclick = "{!c.handlerClick}"/>
+             </div>
+</aura:component>

@@ -1,0 +1,88 @@
+<template>
+  <div class="slds-page-header">
+    <span class="slds-page-header__title slds-truncate" title="Recently Viewed"
+      >Related Records</span
+    >
+    <span
+      class="slds-icon_container slds-icon-standard-opportunity"
+      title="opportunity"
+    >
+      <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+        <use
+          xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"
+        ></use>
+      </svg>
+      <span class="slds-assistive-text"></span>
+    </span>
+    <lightning-button
+      variant="brand"
+      label="Refresh"
+      title="Looks like a link"
+      onclick={handleRefresh}
+      class="slds-m-left_x-small"
+      style="float: right"
+    ></lightning-button>
+    <lightning-button
+      variant="brand"
+      label="Both"
+      name="Both"
+      title="Looks like a link"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+      style="float: right"
+    ></lightning-button>
+    <lightning-button
+      variant="brand"
+      label="Opportunity"
+      name="Opportunity"
+      title="Looks like a link"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+      style="float: right"
+    ></lightning-button>
+    <lightning-button
+      variant="brand"
+      label="Contact"
+      name="Contact"
+      title="Looks like a link"
+      onclick={handleClick}
+      class="slds-m-left_x-small"
+      style="float: right"
+    ></lightning-button>
+  </div>
+  <div>
+    <lightning-datatable
+      data={accountData}
+      columns={columns}
+      key-field="id"
+      onrowselection={handleAccountClick}
+    >
+    </lightning-datatable>
+  </div>
+
+  <div>
+    <template if:true={isContactVisible}>
+      <lightning-layout-item flexibility="auto" padding="around-large">
+        <div class="custom-box">
+          <c-parent-contact
+            stroutput={Ids}
+            onhandlecustomtoast={handleEventToast}
+          ></c-parent-contact>
+          <template if:false={Ids}></template>
+        </div>
+      </lightning-layout-item>
+    </template>
+  </div>
+  <div style="height: auto; width: 1300px">
+    <template if:true={isOpportunity}>
+      <lightning-layout-item flexibility="auto" padding="around-large">
+        <div class="custom-box" style="float: right">
+          <c-child-opportunity
+            stroutput={Ids}
+            onhandleopportunitytoast={handleEventToast}
+          ></c-child-opportunity>
+        </div>
+      </lightning-layout-item>
+    </template>
+  </div>
+</template>

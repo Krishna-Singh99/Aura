@@ -1,0 +1,41 @@
+<aura:component controller="ObjectListClass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global" >
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedValue" type="String" />
+    <aura:attribute name="options2" type="List" />
+    <aura:attribute name="FieldnameType" type="String" />
+    
+    <aura:attribute name="options4" type="List" />
+    <aura:attribute name="FieldnameTypeApi" type="String" />
+    
+     <aura:attribute name="options3" type="List" />
+    <aura:attribute name="Fieldname" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <div class="slds-p-around_x-large">
+        <lightning:select name="Objects" label="Select object:" aura:id="onjId" value="{!v.selectedValue}" onchange="{!c.fieldsName}">
+
+            <aura:iteration items="{!v.options}" var="objectname">
+                <option value="{!objectname}" text="{!objectname}" />  
+            </aura:iteration>
+        </lightning:select>
+        <lightning:select name="objectname" label="Select Field:" aura:id="fieldid" value="{!v.Fieldname}" onchange="{!c.fieldsNameType}">
+            <aura:iteration items="{!v.options2}" var="objectname">
+                <option value="{!objectname}" text="{!objectname}" />  
+            </aura:iteration>
+        </lightning:select>
+
+         <lightning:select name="objectname" label="Field`s Api" aura:id="fieldid" value="{!v.FieldnameTypeApi}">
+            <aura:iteration items="{!v.options4}" var="objectname">
+                <option value="{!objectname}" text="{!objectname}" />  
+            </aura:iteration>
+        </lightning:select>
+        
+         <lightning:select name="objectnameType" label="Select FieldType:" aura:id="fieldidtype" value="{!v.FieldnameType}" >
+            <aura:iteration items="{!v.options3}" var="objectnametype">
+                <option value="{!objectnametype}" text="{!objectnametype}" />  
+            </aura:iteration>
+        </lightning:select>
+        
+                
+        
+    </div>
+</aura:component>

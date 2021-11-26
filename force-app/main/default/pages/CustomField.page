@@ -1,0 +1,65 @@
+<apex:page Controller="CustomDataField" standardStylesheets="false" showHeader="false" >
+    
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet"/>
+        <style>
+            .accid{
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-family: 'Lato', sans-serif; 
+            text-align : center;
+            font-size: 20px;
+            }
+            body{
+            background-color: #F2F2F2;
+            }
+            .header{
+            font-family: 'Lato', sans-serif;
+            text-align : center;
+            
+            }
+            .bgclr{
+            background-color : #DBA901;
+            font-size : 40px;
+           
+            }
+        </style>
+        <script>
+        function abc(AccountId){    
+            var inputAccId = document.getElementById('{!$Component.frmId.AccountId}');
+            inputAccId.value=AccountId;
+            if(inputAccId.value != ''){
+                CallApexMethod() ;
+            }else {
+                var inputLastName = document.getElementById('{!$Component.frmId.LastName}');
+                inputLastName.value='';
+            }   
+        }
+        function clraccId(AccountId){
+            var inputAccId = document.getElementById('{!$Component.frmId.AccountId}');
+            inputAccId.value = '';
+        }        
+        </script>
+    </head>
+    
+    <div class="bgclr">
+        <b class="header">Create New Contact </b><span class="res">{!Result} </span>
+    </div>
+    <apex:form id="frmId">
+        <div class="create_frm">
+            <br/>
+            
+            <span class="accid">Enter Last Name : </span> <apex:inputText styleClass="xtr" id="LastName"  value="{!LastName}" required="false" />
+            <span class="accid">Enter Account Id : </span> <apex:inputText styleClass="accid" onclick="clraccId()" value="{!AccountId}" id="AccountId" required="false" />
+            <apex:commandButton styleClass="accid" value="Insert Contact" action="{!newContact}"/> </div>
+        <apex:actionFunction name="CallApexMethod" action="{!selectedAccId}"/>
+        <apex:dataTable styleClass="data_Table" value="{!newConList}" var="old_cn">
+            <apex:column styleClass="accid" headerClass="hcls" headerValue="Contact Name">{!old_cn.LastName}</apex:column>
+            <apex:column styleClass="accid" headerClass="hcls" headerValue="Contact Account" onclick="abc('{!old_cn.AccountId}')">{!if(old_cn.AccountId != null,old_cn.AccountId,'N/A')}</apex:column>
+            
+            
+        </apex:dataTable>
+    </apex:form>
+</apex:page>

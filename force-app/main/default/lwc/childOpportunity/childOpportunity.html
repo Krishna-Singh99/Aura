@@ -1,0 +1,33 @@
+<template>
+  <lightning-card>
+    <h3 slot="title">
+      <lightning-icon
+        icon-name="standard:opportunity"
+        size="small"
+      ></lightning-icon
+      >Opportunity
+    </h3>
+    <lightning-layout>
+      <lightning-layout-item size="12" padding="around-large">
+        <div class="custom-box">
+          <lightning-datatable
+            data={records}
+            columns={columns}
+            key-field="id"
+            onrowselection={handleOpportunityClick}
+          >
+          </lightning-datatable>
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+  <div>
+    <template if:true={accId}>
+      <lightning-layout-item flexibility="auto" padding="around-large">
+        <div class="custom-box" style="float: right">
+          <c-child-product stroutput={accId}></c-child-product>
+        </div>
+      </lightning-layout-item>
+    </template>
+  </div>
+</template>

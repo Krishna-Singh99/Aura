@@ -1,0 +1,14 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="false" >
+    <apex:includeLightning />
+    <div id="BcSecuritiesDiv"></div>   
+    <script>
+    $Lightning.use("c:Task1Demo", function() {
+        $Lightning.createComponent("c:HorizontalView",
+                                   {},
+                                   "BcSecuritiesDiv",
+                                   function(cmp) {
+                                       console.log('>>>>> App is hosted');
+                                   });
+    });
+    </script>
+</apex:page>
