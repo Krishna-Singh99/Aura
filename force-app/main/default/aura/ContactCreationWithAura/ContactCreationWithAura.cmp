@@ -1,0 +1,41 @@
+<aura:component controller="ContactControllerForAura">
+  <aura:attribute name="contactLastName" type="String" />
+  <aura:attribute name="contactEmail" type="String" />
+  <aura:attribute name="contactId" type="String" />
+     <div  style="height: 166px;width: 189px;margin-left:520px ">
+         <img src="{!$Resource.img + '/img/salesforce.jpg'}" style="border-radius:68px;border: 2px solid cyan; border-radius: 25px;"/>
+     </div>
+    
+<lightning:card iconName="standard:contact" title="Add a Contact" class="cardbg">
+        <div class="slds-p-around_medium cardbg">
+  <div class="slds-p-around_medium bgrnd ">
+    <lightning:recordEditForm objectApiName="Contact">
+      <lightning:messages />
+      <lightning:inputField
+        name="name"
+        fieldName="LastName"
+        value="{!v.contactLastName}"
+      />
+      <lightning:inputField
+        name="email"
+        fieldName="Email"
+        value="{!v.contactEmail}"
+      />
+      <lightning:inputField
+        name="accid"
+        fieldName="AccountId"
+        value="{!v.contactId}"
+      />
+      <lightning:button
+        type="submit"
+        name="Submit"
+                        variant = "brand"
+        label="submit"
+        class="slds-m-top_medium"
+        onclick="{!c.handleSubmit}"
+      />
+    </lightning:recordEditForm>
+  </div>
+    </div>
+    </lightning:card>
+</aura:component>

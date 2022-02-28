@@ -1,0 +1,15 @@
+<aura:component  >
+    <lightning:layout>
+        <lightning:layoutItem >
+            <lightning:icon iconName="action:image" alternativeText="My Camping" class="slds-box slds-text-heading_small" style="float:right;color:white;background-color:white;"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small headr">
+            <div class="page-section page-header" style="margin-left:120px;width:1732px;height:80px;position:inherited;text-align:center;margin-top:0px; background-color: rgb(5, 68, 104);color:white;">
+                
+                <h1 class="slds-text-heading--label" style="text-align:center;">Record</h1>
+                <h2 class="slds-text-heading--medium header2" >FieldSet</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+        
+</aura:component>

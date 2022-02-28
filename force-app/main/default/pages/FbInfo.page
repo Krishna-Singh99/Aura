@@ -1,0 +1,11 @@
+<apex:page controller="FacebookIntegration">
+    <apex:pageBlock title="Facebook">
+        <apex:outputText value="{!id1}"></apex:outputText><br/>
+         <apex:outputText value="{!name1}"></apex:outputText><br/>
+         <apex:outputText value="{!website1}"></apex:outputText><br/>
+        <!--  <apex:outputText value="{!like1}"></apex:outputText><br/>  -->
+    </apex:pageBlock>
+    <!--   <apex:chart animate="true" height="350" width="450" data="{!PieData}">
+    <apex:pieSeries dataField="like1" labelField="likecount" donut="50"></apex:pieSeries>
+    </apex:chart>  -->
+</apex:page>

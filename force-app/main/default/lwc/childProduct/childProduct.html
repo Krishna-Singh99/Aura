@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:contact" size="small"></lightning-icon> Product         
+        </h3>
+       <lightning-layout>
+       <lightning-layout-item size="12" padding="around-large">
+           <div class="custom-box">
+ <lightning-datatable
+        data={records}
+        columns={columns}
+        key-field="id"
+ >
+    </lightning-datatable>
+           </div>
+       </lightning-layout-item>
+   </lightning-layout>
+    </lightning-card>
+</template>

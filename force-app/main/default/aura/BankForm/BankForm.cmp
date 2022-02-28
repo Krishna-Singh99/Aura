@@ -1,0 +1,100 @@
+<aura:component
+  controller="BankInfo"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:availableForFlowScreens,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName"
+  access="global"
+>
+  <div class="error_container">
+    <div class="" id="userErr">
+      {!v.Error}
+      <span class="" id="cls-btn" onclick="{!c.forceClose}"
+        >{!v.crossIcon}</span
+      >
+    </div>
+  </div>
+  <aura:handler
+    name="transaction"
+    event="c:transactionEvent"
+    action="{!c.parentComponentEvent}"
+  />
+  <aura:attribute name="Credit" type="String" />
+  <aura:attribute name="Error" type="String" />
+  <aura:attribute name="accountid" type="String" />
+  <aura:attribute name="crossIcon" type="String" />
+  <aura:attribute name="columns" type="list" />
+    <aura:attribute name="Name" type="String" />    
+    <aura:attribute name="amount" type="String" default="45"/>
+  <aura:handler name="init" value="{! this }" action="{! c.init }" />
+  <aura:attribute
+    name="bank"
+    type="Account"
+    default="{ 'sobjectType': 'Account',
+  'Name': '','Name':'',
+  'Bank__c':'' ,IFSC__c:'','BankAddress__c':'','TotalAmount__c':'','Transaction__c ':''}"
+  />
+  <aura:attribute name="details" type="Account" />
+     <h1 class="slds-text-heading_large">Create New Account</h1>
+  <div>
+    <p class="slds-p-horizontal_small">
+      <lightning:input
+        aura:id="field"
+        label="Bank Name"
+        required="true"
+        name="bankname"
+        value="{!v.bank.Bank__c}"
+      />
+      <lightning:input
+        aura:id="field"
+        label="AccountName"
+        required="true"
+        value="{!v.bank.Name}"
+      />
+      <lightning:input
+        aura:id="field"
+        label="IFSC"
+        required="true"
+        value="{!v.bank.IFSC__c}"
+      />
+      <lightning:input
+        aura:id="field"
+        label="Bank Address"
+        required="true"
+        value="{!v.bank.BankAddress__c}"
+      />
+      <lightning:input
+        aura:id="field"
+        label="Total Amount"
+        required="true"
+        value="{!v.bank.TotalAmount__c}"
+      />
+    </p>
+    <br />
+    <lightning:button
+      label="Save"
+      variant="brand"
+      class="slds-m-top_medium"
+      onclick="{!c.onSave}"
+    />
+    <lightning:button
+      label="Cancel"
+      name="Cancel"
+      variant="destructive"
+      class="slds-m-top_medium"
+      onclick="{!c.onCancel}"
+    />
+  </div>
+  <br />
+     <h1 class="slds-text-heading_large">Bank Details</h1>
+  <div>
+    <lightning:datatable
+      keyField="id"
+      data="{!v.details }"
+      columns="{!v.columns}"
+      onrowselection="{!c.handleAccountClick}"
+      maxRowSelection="1"
+    ></lightning:datatable>
+  </div>
+
+  <div>
+    <c:TranscationfromAccount />
+  </div>
+</aura:component>

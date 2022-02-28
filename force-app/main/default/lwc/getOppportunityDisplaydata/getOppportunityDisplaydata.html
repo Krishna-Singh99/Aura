@@ -1,0 +1,12 @@
+<template>
+  <div style="height: 500px">
+    <template if:true={opportunityList}>
+      <lightning-datatable
+        key-field="id"
+        data={opportunityList}
+        columns={columns}
+      >
+      </lightning-datatable>
+    </template>
+  </div>
+</template>

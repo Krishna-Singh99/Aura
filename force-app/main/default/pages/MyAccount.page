@@ -1,0 +1,18 @@
+<apex:page standardController="Account" recordSetVar="accounts" >
+    <apex:form >
+    <apex:pageBlock title="My Account">
+        <apex:pageBlockTable value="{!accounts}" var="item">
+            <apex:column value="{!item.name}"/>
+            <apex:column value="{!item.id}"/>
+            <apex:column value="{!item.CreatedDate}"/>
+             </apex:pageBlockTable>
+             <apex:pageBlockButtons >
+                <apex:commandButton action="{! save }" value="Save" />      
+                  <apex:commandButton action="{! cancel }" value="Cancel" />
+                  <apex:commandButton action="{! delete }" value="Delete" />
+                  <apex:commandButton action="{! view }" value="View" />
+                
+            </apex:pageBlockButtons>
+    </apex:pageBlock>
+         </apex:form>
+</apex:page>

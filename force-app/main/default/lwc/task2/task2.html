@@ -1,0 +1,126 @@
+<template>
+ <div class="menu-nav">
+  <div class="navigation-bar">
+    <ul>
+      <li onclick={home} ><i class="fa fa-home"></i><span >Home</span></li>
+      <li onclick={datatable} class="Account" data-value="Account"><i class="fa fa-book"></i><span >Account</span></li>
+      <li onclick={datatable} class="Contact" data-value="Contact"><i class="fa fa-handshake"></i><span>Contact</span></li>
+      <li onclick={datatable} class="Opportunity" data-value="Opportunity"><i class="fa fa-user"></i><span>Opportunity</span></li>
+      
+   <li onclick={blogs}><i class="fa fa-rss"></i> <span>Blog</span></li>
+    </ul>
+  </div>
+  </div> 
+  <template if:true={combBox}>
+   <div style="height: 100%">
+   
+    <lightning-combobox
+            name="progress"
+            value={value}
+            placeholder="Records"
+            options={options}
+            onchange={handleChange}></lightning-combobox>
+
+   </div>
+  </template>
+<template if:true={dataTableVisible}>
+    <lightning-datatable
+    key-field="id"
+    data={finalData}
+     show-row-number-column="true"
+    columns={currentDataColumn}>
+</lightning-datatable>
+</template>
+
+<!--
+  <div style="height: 100%">
+    <template if:true={accountList}>
+      <lightning-datatable key-field="id1" data={accountList} columns={columns}>
+      </lightning-datatable>
+    </template>
+  
+  </div>  
+  <div style="height: 100%">
+    <template if:true={oppdata}>
+      <lightning-datatable key-field="id2" data={oppdata} columns={oppColumns}>
+      </lightning-datatable>
+    </template>
+  
+  </div>  
+
+<div style="height: 100%">
+    <template if:true={condata}>
+      <lightning-datatable key-field="id3" data={condata} columns={conColumns}>
+      </lightning-datatable>
+    </template>
+  
+  </div>  
+         -->
+              
+<div style="height: 100%">
+    <template if:true={isVisible}>
+   <div class="body">
+<div class="bg">
+<div class="avatar"></div>
+</div>
+</div>
+    </template>
+  </div> 
+              
+  <div  class="maindiv" >
+    <template if:true={isBlog}>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Salesforce Anywhere</h2>
+      <p>Sometimes a product is so simple that it doesn’t need shiny logos or catchy jingles; understated efficiency has a power all of its own. Salesforce Anywhere is an example of just such a straightforward offering.
+
+The clue is in the name—Salesforce Anywhere—it is literally a way for you to use Salesforce, anywhere. Hold on! We already had that already, right?Let’s explore how. </p>
+    </div>
+    <div class="flip-box-back">
+      <h2>Stay Up to Speed from Anywhere</h2>
+      <p>Salesforce Anywhere allows access to Salesforce from your mobile device, so you really can stay up to speed from anywhere. (One could argue I already had Salesforce anywhere, it’s even in my pj’s! But that’s a story for another day..!)
+
+        In short, this product is about… drums please… </p>
+    </div>
+  </div>
+</div>
+<div class="flip-box rght">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h1>Salesforce Anywhere</h1>
+      <p>Sometimes a product is so simple that it doesn’t need shiny logos or catchy jingles; understated efficiency has a power all of its own. Salesforce Anywhere is an example of just such a straightforward offering.
+
+The clue is in the name—Salesforce Anywhere—it is literally a way for you to use Salesforce, anywhere. Hold on! We already had that already, right?Let’s explore how. </p>
+    </div>
+    <div class="flip-box-back">
+      <h1>Stay Up to Speed from Anywhere</h1>
+      <p>Salesforce Anywhere allows access to Salesforce from your mobile device, so you really can stay up to speed from anywhere. (One could argue I already had Salesforce anywhere, it’s even in my pj’s! But that’s a story for another day..!)
+
+        In short, this product is about… drums please… </p>
+    </div>
+  </div>
+</div>
+    </template>
+  
+  </div> 
+<template if:true={isButton}>
+  <lightning-card >
+        <div class="slds-m-around_medium">
+            <lightning-layout horizontal-align="space">
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={previousHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    Page {page} of {totalPage}
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right"
+                        onclick={nextHandler}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card> 
+</template>
+</template>

@@ -1,0 +1,47 @@
+<apex:page standardController="Opportunity" extensions="Opportunity_Pagination" recordSetVar="opportunities" standardStylesheets="false">
+    <head>
+        <style>
+         body{
+                background-color: #93C2C8;
+                
+                }
+                .datatbl{
+                width:100%;
+                }
+                .hdr{
+                 box-sizing: border-box;
+                }
+                .accid{
+                  box-sizing: border-box;
+                border: 1px solid black;
+                font-family: "Times New Roman", Times, serif;
+                text-align : center;
+                 font-size: 20px;
+                }
+            </style>
+    </head>
+<apex:pageBlock title="Viewing Opportunities">
+<apex:form id="theForm" styleClass="datatbl">
+<apex:pageBlockSection >
+<apex:dataList var="opp" value="{!opportunities}" styleClass="accid">
+{!opp.id}
+</apex:dataList>
+    <apex:dataList var="opp" value="{!opportunities}" styleClass="accid">
+{!opp.Name}
+</apex:dataList>
+    <apex:dataList var="opp" value="{!opportunities}" styleClass="accid">
+{!opp.CloseDate}
+</apex:dataList>
+    <apex:dataList var="opp" value="{!opportunities}" styleClass="accid">
+{!opp.Stagename}
+</apex:dataList>
+</apex:pageBlockSection>
+<apex:panelGrid columns="4">
+<apex:commandLink action="{!first}">FIRST</apex:commandLink>
+<apex:commandLink action="{!next}">NEXT</apex:commandLink>
+<apex:commandLink action="{!previous}">PREVIOUS</apex:commandLink>
+<apex:commandLink action="{!last}">LAST</apex:commandLink>
+</apex:panelGrid>
+</apex:form>
+</apex:pageBlock>
+</apex:page>

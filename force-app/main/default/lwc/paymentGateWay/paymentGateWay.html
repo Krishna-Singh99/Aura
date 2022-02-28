@@ -1,0 +1,78 @@
+<template>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid slds-assistive-text">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <a href="#" class="slds-card__header-link slds-truncate" title="Card Header">
+              <span>Card Header</span>
+            </a>
+          </h2>
+        </div>
+      </header>
+    </div>
+    <div>
+     
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="shadowbox">
+        <lightning-combobox
+        name="progress"
+        label="Select Payement Type"
+        value={value}
+        placeholder="Select Progress"
+        options={options}
+        onchange={handleChange} ></lightning-combobox>
+
+        <template if:true={paymentMethod}>
+          <lightning-combobox
+          name="country"
+          label="Select Country"
+          value={countryName}
+          placeholder="Select country"
+          options={country}
+          onchange={handlecountry} ></lightning-combobox>
+  
+    </template>
+    <template if:true={paymentCountry}>
+        <lightning-combobox
+        name="bank"
+        label="Select Bank"
+        value={bank}
+        placeholder="Select bank"
+        options={countryName}
+        onchange={handlebank} ></lightning-combobox>
+  </template>
+  </div>
+  </div>
+
+    <template if:true={paymentBank}>
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="shadowbox">
+        <p>Payment/Authorization Information </p>
+      </div>
+    </div>
+  
+    <div class="slds-card__body slds-card__body_inner">
+      <lightning-input label="Card Number" value={cardNumber} onchange={Cardnumber} required></lightning-input>
+      <lightning-input label="Expiration Date" type="date"  value={expirationDate} onchange={Expdate}  required date-style="short"></lightning-input>
+      <lightning-input label="Security Code" value={cardCode} onchange={CardCode} required max-length="4"></lightning-input>
+      <lightning-input label="Name on Card" value={name} onchange={Name} required></lightning-input>
+      <lightning-input label="Email" value={email} onchange={Email} type="email" required></lightning-input>
+      <lightning-input label="Address(line 1)" value={address1} onchange={Address1}  required></lightning-input>
+      <lightning-input label="Address(line 2)" value={address2} onchange={Address2}  ></lightning-input>
+      <lightning-input label="City" value={city} onchange={City}  required></lightning-input>
+      <lightning-input label="State" value={state} onchange={State}  required></lightning-input>
+      <lightning-input label="Zip Code" value={zipCode} onchange={ZipCode} type="number" required max-length="5"></lightning-input>
+      <br />
+      <lightning-button type="submit" name="submit" label="Submit" onclick={onSubmit}>
+      </lightning-button>
+    </div>
+  </template>
+    <footer class="slds-card__footer">
+      <a class="slds-card__footer-action" href="#">Contact For Support
+        <span class="slds-assistive-text">Accounts</span>
+      </a>
+    </footer>
+  </article>
+</template>

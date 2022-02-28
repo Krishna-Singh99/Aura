@@ -1,0 +1,28 @@
+.THIS {
+   
+}
+.THIS .container{
+   padding-top: 100px; 
+}
+   .THIS .curvedarrow {
+        position: relative;
+      width: 300px;
+      height: 250px;
+      margin: 20px 0;
+      background: white;
+      border-radius: 50% / 10%;
+      color: black;
+      text-align: center;
+      text-indent: .1em;
+      margin-top : 50px;
+}
+    .THIS .curvedarrow:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: inherit;
+      border-radius: 5% / 50%;
+    }

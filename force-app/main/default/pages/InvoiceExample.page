@@ -1,0 +1,93 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities" standardStylesheets="false" applyHtmlTag="false" showHeader="false" renderAs="PDF">
+    <head>
+        <style>
+            .header{
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            width : 100%
+            }
+            
+            .cld{ 
+            text-align:center;
+            background-color: primary;
+            color:# #00FFFF;         
+            }
+            img{
+            float : right;
+            margin-top: 20px;
+            width:20%;
+            height: 10%;
+            }
+            .myDiv {
+            
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            }
+            .invc{
+            float:right;
+            position: relative;
+            padding : 2px 3px 120px 3px;
+            
+            }
+            .tabl{
+            padding: 120px 2px 10px 8px;
+            
+            }
+            .pclm{
+            text-align:center;
+            }           
+            .bltb{
+            width:100%;
+            margin-top:12%;
+            
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            }
+            .clh{
+            text-align:center;
+            }
+        </style>
+    </head>
+    <div class="header">
+        <h1 class="cld">
+            CLOUD ANALOGY
+        </h1>
+    </div>
+    
+    <apex:image url="https://yt3.ggpht.com/ytc/AKedOLSz5nlZ9YKLqpB7KY4Xayv-FjU_WLVzuifhJjzayg=s900-c-k-c0x00ffffff-no-rj" styleClass="img" />
+    <br/><br/><br/><br/><br/><br/><br/>
+    <div>
+        <h3>
+            <u>Bill To </u> 
+        </h3> 
+        Allen Smith<br/>
+        87, Sector-3<br/>
+        abcd@gmail.com<br/>
+        1666-67698
+    </div>
+    <div class="invc">
+        <p>
+            Invoice No. :  <span>#NB090HG</span>
+            <br/>            
+            Invoice Date :  <span>#NB090HG</span>
+            <br/>
+            Due Date :  <span>#NB090HG</span>
+            <br/>
+        </p>
+    </div>
+    <br/> <br/>
+
+    <apex:dataTable styleClass="bltb" value="{!opportunities}" border="1" rows="10" var="prd">
+        <apex:column styleClass="pclm" headerClass="clh" headerValue="Description">{!prd.Name}</apex:column>
+        <apex:column styleClass="pclm" headerClass="clh" headerValue="Quantity">{!if(prd.TotalOpportunityQuantity != null,prd.TotalOpportunityQuantity,0)}</apex:column>
+        <apex:column styleClass="pclm" headerClass="clh" headerValue="Unit Price">{!if(prd.Amount != null,prd.Amount,'N/A')}</apex:column>
+        <apex:column styleClass="pclm" headerClass="clh" headerValue="Total Price">{!prd.TotalOpportunityQuantity * prd.Amount }</apex:column>
+    </apex:dataTable>    
+</apex:page>

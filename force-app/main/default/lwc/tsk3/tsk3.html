@@ -1,0 +1,15 @@
+<template>
+   <lightning-layout>
+       <lightning-layout-item size="12" padding="around-large">
+           <div class="custom-box">
+ <lightning-datatable
+        data={accountData}
+        columns={columns}
+        key-field="id"
+        onrowselection={handleAccountClick}   >
+    </lightning-datatable>
+           </div>
+       </lightning-layout-item>
+   </lightning-layout>
+     <c-task3-child stroutput={accountId}></c-task3-child>
+</template>

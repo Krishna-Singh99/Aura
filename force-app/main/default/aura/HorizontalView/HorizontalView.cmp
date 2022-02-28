@@ -1,0 +1,91 @@
+<aura:component controller="FieldSetObject" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" access="global">
+     <div class="error_container"> <div class="" id="userErr">{!v.Error}  <span class="" id="cls-btn"  onclick="{!c.forceClose}">{!v.crossIcon}</span></div></div>
+    <c:Task1Header />
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedValue" type="String" />
+    <aura:attribute name="savedField" type="string" />
+    <aura:attribute name="savedField1" type="string" />
+    <aura:attribute name="options2" type="List" />
+    <aura:attribute name="options2v" type="String" />
+    <aura:attribute name="fieldset" type="List" />
+    <aura:attribute name="Option3" type="List" />
+    <aura:attribute name="Option4" type="List" />
+    <aura:attribute name="edit" type="Boolean" default="false"/>
+     <aura:attribute name="Sobject" type="sObject"/>
+      <aura:attribute name="Error" type="String" />
+    <aura:attribute name="crossIcon" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+     <lightning:notificationsLibrary aura:id="notifLib"/>
+
+ <!--    
+        <div class="sep">  
+            <lightning:recordForm objectApiName="{!v.selectedValue}"
+                                  fields="{!v.Option3}" onsubmit="" mode="{v.Option3}"/></div> 
+      -->
+
+    <div class="wrapper">     
+        <div class="sidebar">
+            <div class="slds-p-around_x-large" >
+                <br/><br/>
+                <lightning:select name="Objects" label="Select object:" aura:id="onjId" value="{!v.selectedValue}" onchange="{!c.fieldsset}" >
+                    <option value="">--Select--</option>
+                    <aura:iteration items="{!v.options}" var="objectname">
+                        
+                        <option value="{!objectname}" text="{!objectname}" />  
+                    </aura:iteration>
+                </lightning:select>
+                <br/><br/>
+                <lightning:select name="Objects" label="Select Fieldset:" aura:id="onjId" value="{!v.options2v}" onchange="{!c.setfieldform}" >
+                    <option value="">--Select--</option>
+                    <aura:iteration items="{!v.options2}" var="objectname">
+                        
+                        <option value="{!objectname}" text="{!objectname}"/>  
+                    </aura:iteration>
+                </lightning:select> <br/>
+                
+                <lightning:select name="Objects" label=" Fieldset Name" aura:id="onjId">
+                    
+                    <aura:iteration items="{!v.Option3}" var="objectname">
+                        <option value="{!objectname.fieldLabel}" text="{!objectname.fieldLabel}" class="slct"/>  
+                    </aura:iteration>
+                </lightning:select>              
+            </div>
+        </div>
+    </div>
+    
+     <div class="slds-grid slds-wrap" style="padding-left: 600px;width:70%">
+         <table
+                class="slds-table slds-table_cell-buffer slds-cell-buffer_left slds-cell-buffer_right slds-table_bordered slds-table_striped">
+           <tr>
+             <aura:iteration items="{!v.Option3}" var="item">
+        <br/>
+            
+                 <aura:if isTrue="{!item.isPickList}">
+                   <lightning:select  label="{!item.fieldLabel}" name="{!item.fieldLabel}"  value="{!item.wrapperfld}">
+                                        <option value="" text="- None -" /> 
+                                        <aura:iteration items="{!item.pickListValues}" var="Pickvalues">
+                                            <option value="{!Pickvalues}" text="{!Pickvalues}"/>  
+                                        </aura:iteration>
+                                    </lightning:select>
+                 <aura:set attribute="else">
+                      <aura:if isTrue="{!item.isCheckbox}">
+                          <lightning:input type="{!item.fieldType}" variant="standard"  label="{!item.fieldLabel}" value="{!item.wrapperfld}" name="{!item.fieldAPIName}" aura:id="recordId" checked="{!item.defaultValueOfCheckbox}" class="slds-table slds-table_cell-buffer slds-table_bordered" required="{!item.isDBRequired}"/>
+                      <aura:set attribute="else">
+                                  <lightning:input variant="standard"   messageWhenBadInput="Incorrect Name" type="{!item.fieldType}" label="{!item.fieldLabel}" value="{!item.wrapperfld}" name="{!item.fieldAPIName}" aura:id="recordId" class="slds-table slds-table_cell-buffer slds-table_bordered" required="{!item.isDBRequired}"/>
+                     </aura:set>
+                 </aura:if>
+                     </aura:set>
+                 </aura:if>
+    </aura:iteration>
+         <aura:if isTrue="{!v.edit}">
+             
+         <lightning:button label="Save"  variant="brand" class="slds-m-top_medium" onclick="{!c.onSave}"/>
+          <lightning:button label="Cancel" name="Cancel" variant="destructive" class="slds-m-top_medium" onclick="{!c.onCancel}"/>
+                <aura:set attribute="else">
+            You can’t edit this.
+        </aura:set>
+    </aura:if> 
+             </tr>
+             </table>
+    </div> 
+</aura:component>

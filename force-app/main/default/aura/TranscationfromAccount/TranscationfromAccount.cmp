@@ -1,0 +1,11 @@
+<aura:component>
+  <aura:registerEvent name="transaction" type="c:transactionEvent" />
+    <aura:attribute type="String" name="money" default="0"/>
+     <aura:attribute type="String" name="transactions" />
+    <br/>
+    <h1 class="slds-text-heading_large">Transaction</h1>
+  <lightning:input name="amount" value="{!v.money}"/>
+    <br/> <br/>
+  <lightning:button aura:id="Credit" label="Credit" variant="brand" onclick="{!c.transaction}"/> &nbsp;&nbsp;
+  <lightning:button aura:id="Debit" label="Debit" variant="brand" onclick="{!c.transaction}"/>
+</aura:component>

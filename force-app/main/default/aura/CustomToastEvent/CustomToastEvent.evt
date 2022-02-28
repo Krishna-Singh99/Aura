@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Custom_Toast" access="global">
+<aura:attribute name="toastInput" type="String" description="To Open and Hide Toast. (error or success)" access="global" />
+<aura:attribute name="message" type="String" description="to store message to show on toast" access="global" />
+</aura:event>

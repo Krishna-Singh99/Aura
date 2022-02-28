@@ -1,0 +1,258 @@
+<template>
+<div class="menu-nav">
+  <div class="navigation-bar">
+    <ul>
+      <li onmouseover={Eyeglasses}><i class="fa fa-home"></i><span >Eyeglasses</span></li>
+      <li onmouseover={Sunglasses}><i class="fa fa-book"></i><span >Sunglasses</span></li>
+      <li onmouseover={Premium}><i class="fa fa-handshake"></i><span>Premium Brands</span></li>
+      <li onmouseover={Discover}><i class="fa fa-user"></i><span>Discover</span></li>
+
+  <li ><i class="fa fa-user"></i> <span>Help</span></li>
+    </ul>
+  </div>
+  </div>
+<div class="abs" >
+  <div class="body">
+<div style="position:relative;">
+  <template if:true={isEyeglasses}>
+  <div class="c-container" style="position:relative;">
+      <lightning-layout horizontal-align="space">
+          <div class="container" style="position:relative;">
+  <div class="card" >
+    <div class="card__header">
+      <img src={glass1} width="600"  onclick={EyeglassesPage}>
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Veithdia</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={glass2} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Banded 1976</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={glass3} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Xingyu</span>
+      <p>Men`s Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+      </lightning-layout>
+  </div>
+</template>
+    </div>
+          </div>
+  </div>
+  <!-- Sunglasses  -->
+  <div class="abs" >
+    <div class="body">
+  <div style="position:relative;">
+<template if:true={isSunglasses}>
+  <div class="c-container" style="position:relative;">
+      <lightning-layout horizontal-align="space">
+          <div class="container" style="position:relative;">
+  <div class="card" >
+    <div class="card__header">
+      <img src={glass6} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Veithdia</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={premium1} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Banded 1976</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={premium2} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Xingyu</span>
+      <p>Men`s Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+      </lightning-layout>
+  </div>
+</template>
+</div>
+    </div>
+  </div>
+  <!--Premium Brands -->
+  <div class="abs" >
+  <div class="body">
+<div style="position:relative;">
+<template if:true={isPremium}>
+  <div class="c-container" style="position:relative;">
+      <lightning-layout horizontal-align="space">
+          <div class="container" style="position:relative;">
+  <div class="card" >
+    <div class="card__header">
+      <img src={premium3} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Veithdia</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={premium4} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Banded 1976</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={stylish1} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Xingyu</span>
+      <p>Men`s Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+      </lightning-layout>
+  </div>
+</template>
+</div>
+</div>
+</div>
+  <!-- Discover -->
+<div class="abs" >
+  <div class="body">
+<div style="position:relative;">
+<template if:true={isDiscover}>
+  <div class="c-container" style="position:relative;">
+      <lightning-layout horizontal-align="space">
+          <div class="container" style="position:relative;">
+  <div class="card" >
+    <div class="card__header">
+      <img src={stylish2} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Veithdia</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={stylish3} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Banded 1976</span>
+      <p>Polarized Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+          <div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={stylish4} width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Xingyu</span>
+      <p>Men`s Wayfarer Sunglasses</p>
+    </div>
+    </div>
+          </div>
+      </lightning-layout>
+  </div>
+</template>
+<div>
+  <template if:true={eye}>
+  <c-payment-gate-way></c-payment-gate-way>
+</template>
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="onlyImg" onmouseout={mouseout}>
+    <img src={logo}>
+  </div>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <img src={glass3}>
+    <h3>Light<span>Eye</span></h3>
+
+    <p class="footer-links">
+     
+      <a href="#">Blog</a>
+      |
+      <a href="#">About</a>
+      |
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">© 2019 LightforEye  Pvt. Ltd.</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p><span>69 -CloudAnalogy,
+         Bldg. No. A - 1, Sector - 3</span>
+        Kurukshetra, Haryanai - 336103</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+91 22-27782183</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@eduonix.com">support@LightforEye.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+      We Provide top quality stylish sunglasses which suits you 
+      and make you feel proud.</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+  </template>

@@ -1,0 +1,50 @@
+<aura:component controller="ContactIdvsPassword" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:hasSObjectName,forceCommunity:availableForAllPageTypes"
+  access="global"
+>
+  <aura:attribute name="contactUserName" type="String" />
+  <aura:attribute name="contactPassword" type="String" />
+    <aura:attribute name = "result" type="Boolean" />
+    <aura:attribute name = "isMatched" type="Boolean" default="false"/>
+
+    <div
+    class="slds-form-element slds-align_absolute-center slds-m-top_x-large container"
+    style="padding-top: 50px;height:100%;" >
+    <div class="slds-col slds-size_6-of-12 curvedarrow" style=" padding-bottom:70px;">
+      <form>
+        <div
+          class="
+            slds-align_absolute-center
+            slds-m-top_small
+            slds-text-heading_large
+          "
+        >
+            <div style="padding-bottom:30px;"> <span style="marging-bottom:70px;position:relative">LOGIN HERE</span></div>
+         
+        </div>
+
+        <div class="slds-form-element__control">
+          <lightning:input
+            label="Username"
+            name="username"
+            value="{!v.contactUserName}"
+            required="true"
+          />
+        </div>
+
+        <div class="slds-form-element__control">
+          <lightning:input
+            label="Password:"
+            type="password"
+            name="password"
+            value="{!v.contactPassword}"
+            required="true"
+          />
+        </div>
+
+        <div class="slds-align_absolute-center" style="height: 4rem" >
+          <lightning:button variant="Brand" label="Login" onclick="{!c.login}"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</aura:component>

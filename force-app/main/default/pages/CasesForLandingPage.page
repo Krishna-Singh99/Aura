@@ -1,0 +1,28 @@
+<apex:page controller="MyCaseListController" standardStylesheets="true" showHeader="false" >  
+    <header>
+      <style>
+          .sts{
+          color:red !important;
+          }
+        </style>
+        
+    </header>
+    <apex:slds /> 
+    <script>
+    function getUserId(){
+       var getuserId = {!$User.Id};    
+        return getuserId;
+        }
+    </script>
+   <apex:pageBlock title="Hello {!$User.FirstName}!">
+   </apex:pageBlock>
+  <apex:pageblock >
+      <apex:pageBlockTable value="{!ListOfCases}" var="case">
+          <apex:column value="{!case.CaseNumber}" headerValue="CaseNumber" />
+          <apex:column styleClass="sts" value="{!case.Status}" headerValue="Status" />
+          <apex:column value="{!case.Subject}" headerValue="Subject" />
+          <apex:column value="{!case.Contact.Name}" headerValue="Contact Name" />
+           <apex:column value="{!case.Priority}" headerValue="Priority" />
+      </apex:pageBlockTable>
+    </apex:pageblock>
+</apex:page>

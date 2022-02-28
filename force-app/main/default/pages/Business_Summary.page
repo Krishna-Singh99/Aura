@@ -1,0 +1,13 @@
+<apex:page controller="Summary_Business_Class">
+    <apex:form title="Business Summary">
+    <apex:pageBlock title="Account Summary">
+        <apex:pageBlockTable value="{!accList}" var="a" id="list">
+              <apex:column headerValue="Sr. No." value="{!a.Serial_Number__c}"></apex:column>
+        <apex:column headerValue="AccountName" value="{!a.name}"/>
+            <apex:column headerValue="Number_of_LineItems__c" value="{!a.Number_of_LineItems__c}"/>
+            <apex:column headerValue="Number of Contact" value="{!a.Count__c}"/>
+           
+      </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

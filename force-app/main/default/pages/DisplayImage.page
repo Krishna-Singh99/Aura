@@ -1,0 +1,9 @@
+<apex:page showHeader="false">
+    <apex:pageBlock title="DisplayName">
+        <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+         <td width="32%" height="80">
+                               
+             <apex:image url="{!URLFOR($Resource.signatures_for_contracts, '/signatures_for_contracts/'+'Daniel.png')}" width="100%" height="auto" />
+                            </td>
+    </apex:pageBlock>
+</apex:page>

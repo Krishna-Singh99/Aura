@@ -1,0 +1,17 @@
+.THIS {
+}
+div.THIS {
+    font-size : 16px;
+    margin-top : 20px;
+    background-color : blue;
+    width:100%;
+    padding: 12px 18px 120px 18px;  
+}
+label.THIS {
+    font-size : 16px;
+    margin-top : 20px;
+    color : green;
+    width:100%;
+    padding: 12px 18px 2pxpx 18px;
+    text-align : center;
+}

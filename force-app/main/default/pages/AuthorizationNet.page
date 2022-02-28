@@ -1,0 +1,178 @@
+<apex:page controller="AU_Payment_Class" showHeader="false" >
+    <script>
+    function inputLimiter(e,allow) {
+        var AllowableCharacters = '';
+        
+        if (allow == 'Letters'){AllowableCharacters=' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';}
+        if (allow == 'Numbers'){AllowableCharacters='1234567890';}
+        if (allow == 'NameCharacters'){AllowableCharacters=' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-.\'';}
+        if (allow == 'NameCharactersAndNumbers'){AllowableCharacters='1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-\'';}
+        if (allow == 'Currency'){AllowableCharacters='1234567890.';}
+        
+        var k = document.all?parseInt(e.keyCode): parseInt(e.which);
+        if (k!=13 && k!=8 && k!=0){
+            if ((e.ctrlKey==false) && (e.altKey==false)) {
+                return (AllowableCharacters.indexOf(String.fromCharCode(k))!=-1);
+            } else {
+                return true;
+            }
+        } else {
+            return true;
+        }
+    } 
+    
+    function GetURLParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+    }
+    
+    
+    function getPrice()
+    {
+        var price = GetURLParameter('p');
+        document.getElementById("price").innerHTML = price ;
+        )            
+        window.onload = getPrice;        
+        </script>
+    <style>
+        .form{
+        height: 90%;
+        width: 55%;
+        align-items: center;
+        margin-left:50px;
+        margin-right:50px;
+        margin-bottom:50px;
+        margin-top:10px;
+        position: absolute;
+        border: none;
+        font-size:14px
+        }
+        .topDiv{
+        margin-left:10%;
+        margin-right:10%;
+        margin-bottom:10%;
+        margin-top:3%;
+        width : 80%
+        }
+        .logo{
+        align-items: center;
+        margin-left: 50%;
+        }
+        .p, .table, .tr, .td{
+        font-size:14px
+        }
+        #tabTwo{
+        font-size : 14px !important
+        }
+        .activeTab {background-color: #236FBD; color:white; background-image:none;font-size:14px}
+        .inactiveTab { background-color: lightgrey; color:black; background-image:none;font-size:14px}
+    </style>
+    <apex:form styleclass="form" >
+        <apex:pageblock >
+            <div class="topDiv">
+                <div class="logo" width="100%" >Logo</div>
+                <div><p id="price"></p></div>
+                <p style="align-items: center;margin-left: 50%;">TestCompany.Com</p>
+                <br/>
+                Thank you for signing the Proposal letter.  To proceed with the next steps in the process please provide 
+                payment for the $250 due diligence fee either using Credit Card or Check via the form below:
+                <br/><br/> 
+                <apex:tabPanel switchType="client" selectedTab="creditCard" id="theTabPanel" tabClass="activeTab" inactiveTabClass="inactiveTab">
+                    <apex:tab label="CreditCard" style="font-size:14px;" name="creditCard" id="tabOne">
+                        <p>The charge will appear on your credit card as Test Company Business Capital,LLC</p>
+                        <br/>
+                        
+                        <table>
+                            <tr><td width="25%">*Credit Card: </td>
+                                <td>
+                                    <apex:selectList value="{!creditCard}" multiselect="false" size="1">
+                                        <apex:selectOptions value="{!CreditCards}"/>
+                                    </apex:selectList>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Card Number: </td>
+                                <td colspan="2">
+                                    <apex:inputText value="{!cardNumber}" style="width:100px;" onkeypress="return inputLimiter(event,'Numbers');"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Name on Card: </td>
+                                <td colspan="4" >
+                                    <apex:inputText value="{!cardName}" style="width:180px;" onkeypress="return inputLimiter(event,'NameCharacters');"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Expires: </td>
+                                <td >
+                                    <apex:selectList value="{!cardExpYear}" multiselect="false" size="1" >
+                                        <apex:selectOptions value="{!Year}"/>
+                                    </apex:selectList>
+                                    <apex:selectList value="{!cardExpMonth}" multiselect="false" size="1">
+                                        <apex:selectOptions value="{!Month}"/>
+                                    </apex:selectList>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Security Code: </td>
+                                <td >
+                                    <apex:inputText value="{!securityCode}" style="width:70px;" onkeypress="return inputLimiter(event,'Numbers');"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Email: </td>
+                                <td >
+                                    <apex:inputText value="{!email}" style="width:70px;" onkeypress="return inputLimiter(event,'Numbers');"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Address (line 1): </td>
+                                <td >
+                                    <apex:inputText value="{!Add1}" style="width:200px;"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>Address (line 2): </td>
+                                <td >
+                                    <apex:inputText value="{!Add2}" style="width:200px;"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*City: </td>
+                                <td >
+                                    <apex:inputText value="{!city}" style="width:80px;"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*state: </td>
+                                <td >
+                                    <apex:inputText value="{!state}" style="width:80px;"/>
+                                </td>
+                            </tr>
+                            
+                            <tr><td>*Zip Code: </td>
+                                <td >
+                                    <apex:inputText value="{!zip}" style="width:60px;" onkeypress="return inputLimiter(event,'Numbers');"/>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr><td></td>
+                                <td> 
+                                    <span><apex:inputCheckbox value="{!cardTermCheck}"/></span> *I understand that Test Company Business Capital,LLC does not process refunds 
+                                </td></tr>
+                        </table>
+                        <apex:commandbutton action="{!submitPayProfile}" value="Submit Payment"  style="margin-left: 34%;margin-top: 3%"/>
+                        
+                    </apex:tab>
+                </apex:tabPanel></div></apex:pageblock></apex:form>
+</apex:page>
