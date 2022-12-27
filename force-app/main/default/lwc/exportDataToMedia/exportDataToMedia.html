@@ -1,0 +1,43 @@
+<template>  
+   <a target="_self" class="slds-button" download="ExportToCSV.csv" href={hrefdata} onclick={exportToCSV}  
+     style="margin-left: 80%;">Download Excel</a>   -->
+       <div class="slds-p-around_medium lgc-bg">
+            <lightning-button-menu alternative-text="Show menu">
+                <lightning-menu-item value={hrefdata} label="Download To Excel" href={hrefdata} download="ExportToCSV.csv" onclick={exportToCSV}></lightning-menu-item>
+                <lightning-menu-item value={hrefdata} label="Download To PDF"  download="ExportToCSV.pdf" onclick={generatePdf}></lightning-menu-item>
+      <!-- <a target="_self" class="button js-button" download="ExportToCSV.csv" href={hrefdata} onclick={exportToCSV}></a> <span class="slds-truncate" title="Menu Item One">Download as Excel</span> -->
+                <!-- <lightning-menu-item value={generatePdf} download="ExportToCSV.PDf" label="Download To PDF"></lightning-menu-item>
+                <a target="_self" class="button js-button" download="ExportToCSV.pdf" onclick={generatePdf}  
+     style="margin-left: 80%;">Download PDF</a> -->
+            </lightning-button-menu>
+    </div> 
+     <!-- <lightning-button class="slds-button" download="ExportToCSV.csv" variant="base" label="Download To Excel" title="Download To Excel" onclick={exportToCSV}></lightning-button>
+      <lightning-button label="Download To PDF" onclick={generatePdf}></lightning-button> -->
+
+      <!-- <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+  <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" aria-expanded="true" title="Show More">
+    <svg class="slds-button__icon" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+    </svg>
+    <span class="slds-assistive-text">Show More</span>
+  </button>
+  <div class="slds-dropdown slds-dropdown_left">
+    <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+      <li class="slds-dropdown__item" role="presentation">
+       <a target="_self" class="button js-button" download="ExportToCSV.pdf" onclick={generatePdf}  
+     style="margin-left: 80%;">Download PDF</a>
+          <span class="slds-truncate" title="Menu Item One">Download as Excel</span>
+        </a>
+      </li>
+      <li class="slds-dropdown__item" role="presentation">
+        <a href="#" role="menuitem" tabindex="-1">
+          <span class="slds-truncate" title="Menu Item Two">Download as PDF</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+   <lightning-datatable data={contactList} columns={contactColumns} key-field="id"  
+     hide-checkbox-column="true">  
+   </lightning-datatable>  
+ </template>

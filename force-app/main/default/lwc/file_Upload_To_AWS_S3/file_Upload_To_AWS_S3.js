@@ -19,7 +19,7 @@ export default class FileUploaderCompLwc extends LightningElement {
     }
     
     handleClick(){
-        const {base64, filename} = this.fileData
+        const {base64, filename, recordId} = this.fileData
         uploadFile({ base64, filename}).then(result=>{
             this.fileData = null
             let title = `${filename} uploaded successfully!!`

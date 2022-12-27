@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Customer Community User Cloned</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Reply</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ReplyEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

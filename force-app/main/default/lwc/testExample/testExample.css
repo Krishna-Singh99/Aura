@@ -1,0 +1,12 @@
+.slds-box{ 
+font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+    margin-left: 2px !important;
+    border-radius: 4px !important;
+    border: solid 2px blue !important;
+    background-color: var(--c-hiltonCyanBlue) !important;
+}
+
+.body{
+	background-color: white;
+}

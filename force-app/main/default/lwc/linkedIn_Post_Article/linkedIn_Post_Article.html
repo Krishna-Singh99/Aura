@@ -1,0 +1,54 @@
+<template>
+	<c-custom-toast-notification
+    timeout={timeout}
+    sticky={sticky}
+  ></c-custom-toast-notification>
+<div class="container">
+  <div class="form">
+    <div class="input-box">
+        <template if:true={showLoadedFile}>
+      <section id="wrapper">
+	<div class="videoContainer">
+        <template if:true={image}>
+    <img  src={reader} width="100%" style="background-color:#ffffff"></img>
+		  <p>Your browser does not support the image tag.</p> </template>
+             <template if:false={image}>
+    <video id="myVideo" controls poster="https://www.wyzowl.com/wp-content/uploads/2019/09/YouTube-thumbnail-size-guide-best-practices-top-examples.png" preload="auto"  width="380" >
+      <source src={blobURL} type="video/mkv" />
+		  <p>Your browser does not support the video tag.</p>
+		</video> </template>
+		<div class="caption">Prometheus</div>
+		<div class="control">
+			<div class="btmControl">
+				<div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+				<div class="progress-bar">
+					<div class="progress">
+						<span class="bufferBar"></span>
+						<span class="timeBar"></span>
+					</div>
+				</div>
+				<!--<div class="volume" title="Set volume">
+					<span class="volumeBar"></span>
+				</div>-->
+				<div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+				<div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<lightning-formatted-rich-text value={fileName} >
+    </lightning-formatted-rich-text> </template>
+      <i></i>
+    </div><span><lightning-input label="" 
+  name="file" 
+  onchange={handleUploadFinished} 
+  type="file">
+</lightning-input></span>
+<span>
+    <lightning-button variant="brand" label="Post" title="Post" onclick={handlepost}></lightning-button></span>
+    <!-- <input type="file" id="file" /> -->
+  </div>
+</div>
+<c-linked-in-home-page-footer></c-linked-in-home-page-footer>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <c-custom-toast-notification
+    timeout={timeout}
+    sticky={sticky}
+  ></c-custom-toast-notification>
+
+<div class="container">
+  <div class="form">
+    <div class="input-box">
+       <lightning-formatted-rich-text value={inputText}>
+    </lightning-formatted-rich-text>
+      <input onchange={handleinput} type="text" required >
+      <span>Post Text</span>
+      <i></i>
+    </div>
+    <lightning-button variant="brand" label="Post" title="Post" onclick={handlepost}></lightning-button>
+  </div>
+</div>
+
+<c-linked-in-home-page-footer></c-linked-in-home-page-footer>
+</template>

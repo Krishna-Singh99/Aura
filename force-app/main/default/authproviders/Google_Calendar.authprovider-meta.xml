@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://accounts.google.com/o/oauth2/auth</authorizeUrl>
+    <consumerKey>126361602485-gaenqouiq4lnlm9t2b88b5e06dl5bu7c.apps.googleusercontent.com</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <defaultScopes>https://www.googleapis.com/auth/calendar</defaultScopes>
+    <friendlyName>Google Calendar</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>true</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://accounts.google.com/o/oauth2/accessToken</tokenUrl>
+</AuthProvider>

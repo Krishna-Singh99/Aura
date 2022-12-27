@@ -121,6 +121,7 @@ public class FieldSetObject {
     }
     @AuraEnabled
     public static String updateData(String objectData, String objname) {
+        System.debug('objectData'+objectData);
         try {
             Schema.SObjectType convertType = Schema.getGlobalDescribe().get(objname);
             Sobject sObjType = convertType.newSObject();
@@ -128,6 +129,7 @@ public class FieldSetObject {
             Map<String, Object> sobjectData = (Map<String, Object>) JSON.deserializeUntyped(
                 objectData
             );
+            System.debug('sobjectData>>>'+sobjectData);
             if(objectData!=null && objname!=null){
                 for(String fieldAPI: sobjectData.keySet()){
                 String Value = String.valueOf(sobjectData.get(fieldAPI));

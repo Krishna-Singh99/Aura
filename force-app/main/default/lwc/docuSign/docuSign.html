@@ -1,0 +1,133 @@
+<template>
+	<template if:true={home}>
+		<div class="wrapper">
+			<div class="page-header section-dark"
+				style="background-image: url('http://demos.creative-tim.com/paper-kit-2/assets/img/antoine-barres.jpg')">
+				<div class="filter"></div>
+				<div class="content-center">
+					<div class="container">
+						<div class="title-brand">
+							<h1 class="presentation-title">DocuSign</h1>
+							<div class="fog-low">
+								<img src="http://demos.creative-tim.com/paper-kit-2/assets/img/fog-low.png" alt="">
+              </div>
+								<div class="fog-low right">
+									<img src="http://demos.creative-tim.com/paper-kit-2/assets/img/fog-low.png" alt="">
+              </div>
+								</div>
+								<div class="demo-only" style="height:6rem;position:relative" dir="rtl">
+									<div role="status" class="slds-spinner slds-spinner_medium">
+										<span class="slds-assistive-text">Loading</span>
+										<div class="slds-spinner__dot-a"></div>
+										<div class="slds-spinner__dot-b"></div>
+									</div>
+								</div>
+								<h2 class="presentation-subtitle text-center"></h2>
+							</div>
+						</div>
+						<div class="moving-clouds"
+							style="background-image: url('http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png'); ">
+
+						</div>
+					</div>
+				</div>
+	</template>
+	<template if:true={cloud}>
+    <div class="slds-grid slds-gutters" style="margin:0;background-color:whitesmoke;height: 85px;">
+<div class="slds-col slds-size_2-of-8" style="align-self: center;">
+  <lightning-button icon-name="action:reject" title="Non-primary action"  class="slds-m-left_x-small"></lightning-button>
+  <span style="font-size: 22px">  | </span> <span>Upload a Document and Add Envelope Recipients</span>
+</div>
+<div class="slds-col slds-size_3-of-8">
+<span></span>
+</div>
+<div class="slds-col slds-size_3-of-8">
+<span></span>
+</div>
+</div>
+		<div class="clouds">
+			<div class="cloud x1"></div>
+			<!-- Time for multiple clouds to dance around -->
+			<div class="cloud x2"></div>
+			<div class="cloud x3"></div>
+			<div class="cloud x4"></div>
+			<div class="cloud x5"></div>
+    <div class="slds-grid slds-gutters" style="margin:0,background-color: whitesmoke;height: 85px;">
+<div class="slds-col slds-size_1-of-8">
+ <span></span>
+</div>
+<div class="slds-col slds-size_6-of-8">
+  <div class="border">
+    			<!-- <div class="slds-form-element">
+				<span class="slds-form-element__label" id="file-selector-primary-label-101">Attachment</span>
+				<div class="slds-form-element__control">
+					<div class="slds-file-selector slds-file-selector_files">
+						<div class="slds-file-selector__dropzone">
+							<input type="file" class="slds-file-selector__input slds-assistive-text" accept="image/png" id="file-upload-input-103" aria-labelledby="file-selector-primary-label-101 file-selector-secondary-label102" />
+							<label class="slds-file-selector__body" for="file-upload-input-103" id="file-selector-secondary-label102">
+<span class="slds-file-selector__button slds-button slds-button_neutral">
+<svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#upload"></use>
+</svg>Upload Files</span>
+<span class="slds-file-selector__text slds-medium-show">or Drop Files</span>
+</label>
+						</div>
+					</div>
+				</div>
+			</div> -->
+ <div class="slds-grid slds-gutters">
+	 <div class="slds-col slds-size_1-of-4">
+		 <template if:true={showLoadedFile}>
+			  <section id="wrapper">
+	<div class="videoContainer">
+        <template if:true={image}>
+    <img  src={reader} style="background-color:#ffffff;max-width: 90%;height: 300px;"></img>
+		  <p>Your browser does not support the image tag.</p> </template>
+		  <template if:true={pdf}>
+    <img  src="https://play-lh.googleusercontent.com/9XKD5S7rwQ6FiPXSyp9SzLXfIue88ntf9sJ9K250IuHTL7pmn2-ZB0sngAX4A2Bw4w" style="background-color:#ffffff;max-width: 90%;height: 300px;"></img>
+		 </template>
+		 <template if:true={docx}>
+    <img  src="https://png.pngtree.com/png-vector/20190411/ourlarge/pngtree-docx-file-document-icon-png-image_927834.jpg" style="background-color:#ffffff;max-width: 90%;height: 300px;"></img>
+		 </template>
+		
+	</div>
+</section>
+		 </template>
+ </div>
+ <div class="slds-col slds-size_2-of-4" style="padding-top: 15px;margin-inline: auto;">
+				<c-custom-toast-notification
+    timeout={timeout}
+    sticky={sticky}
+  ></c-custom-toast-notification>
+<div class="container">
+  <div class="form">
+    <div class="input-box">
+        <template if:true={showLoadedFile}>
+<lightning-formatted-rich-text value={fileName} >
+    </lightning-formatted-rich-text> </template>
+      <i></i>
+    </div><span><lightning-input label="" 
+  name="file" 
+  onchange={handleUploadFinished} 
+  type="file">
+</lightning-input></span>
+<span>
+    <lightning-button variant="brand" label="Send" title="Send" onclick={handlepost}></lightning-button></span>
+    <!-- <input type="file" id="file" /> -->
+  </div>
+</div>
+ </div>
+ </div>
+ <div class="slds-col slds-size_1-of-4">
+		</div>
+
+</div>
+</div>
+<div class="slds-col slds-size_1-of-8">
+<span></span>
+</div>
+</div>
+		</div>
+	</template>
+
+</template>

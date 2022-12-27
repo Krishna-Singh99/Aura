@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK__c</fullName>
+    <externalId>false</externalId>
+    <label>UK</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abbey National plc</fullName>
+                <default>false</default>
+                <label>Abbey National plc</label>
+            </value>
+            <value>
+                <fullName>Abbey National Treasury Services plc</fullName>
+                <default>false</default>
+                <label>Abbey National Treasury Services plc</label>
+            </value>
+            <value>
+                <fullName>ABC International Bank plc</fullName>
+                <default>false</default>
+                <label>ABC International Bank plc</label>
+            </value>
+            <value>
+                <fullName>Access Bank UK Limited</fullName>
+                <default>false</default>
+                <label>Access Bank UK Limited</label>
+            </value>
+            <value>
+                <fullName>Ahli United Bank (UK) plc</fullName>
+                <default>false</default>
+                <label>Ahli United Bank (UK) plc</label>
+            </value>
+            <value>
+                <fullName>Airdrie Savings Bank</fullName>
+                <default>false</default>
+                <label>Airdrie Savings Bank</label>
+            </value>
+            <value>
+                <fullName>Allied Bank</fullName>
+                <default>false</default>
+                <label>Allied Bank</label>
+            </value>
+            <value>
+                <fullName>Alpha Bank</fullName>
+                <default>false</default>
+                <label>Alpha Bank</label>
+            </value>
+            <value>
+                <fullName>AMC Bank Ltd</fullName>
+                <default>false</default>
+                <label>AMC Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Anglo-Romanian Bank Ltd</fullName>
+                <default>false</default>
+                <label>Anglo-Romanian Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>ANZ Bank (Europe) Ltd</fullName>
+                <default>false</default>
+                <label>ANZ Bank (Europe) Ltd</label>
+            </value>
+            <value>
+                <fullName>Banc of America Securities Ltd</fullName>
+                <default>false</default>
+                <label>Banc of America Securities Ltd</label>
+            </value>
+            <value>
+                <fullName>Bank Leumi (UK) plc</fullName>
+                <default>false</default>
+                <label>Bank Leumi (UK) plc</label>
+            </value>
+            <value>
+                <fullName>Bank Mandiri (Europe) Ltd</fullName>
+                <default>false</default>
+                <label>Bank Mandiri (Europe) Ltd</label>
+            </value>
+            <value>
+                <fullName>Bank of Beirut (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Bank of Beirut (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Bank of China (UK) Limited</fullName>
+                <default>false</default>
+                <label>Bank of China (UK) Limited</label>
+            </value>
+            <value>
+                <fullName>Bank of London and The Middle East plc</fullName>
+                <default>false</default>
+                <label>Bank of London and The Middle East plc</label>
+            </value>
+            <value>
+                <fullName>Bank of New York Mellon (International) Limited</fullName>
+                <default>false</default>
+                <label>Bank of New York Mellon (International) Limited</label>
+            </value>
+            <value>
+                <fullName>Bank of Philippine Islands (Europe), PLC</fullName>
+                <default>false</default>
+                <label>Bank of Philippine Islands (Europe), PLC</label>
+            </value>
+            <value>
+                <fullName>Bank of Scotland plc</fullName>
+                <default>false</default>
+                <label>Bank of Scotland plc</label>
+            </value>
+            <value>
+                <fullName>Bank Saderat plc</fullName>
+                <default>false</default>
+                <label>Bank Saderat plc</label>
+            </value>
+            <value>
+                <fullName>Bank Sepah International plc</fullName>
+                <default>false</default>
+                <label>Bank Sepah International plc</label>
+            </value>
+            <value>
+                <fullName>Barclays Bank plc</fullName>
+                <default>false</default>
+                <label>Barclays Bank plc</label>
+            </value>
+            <value>
+                <fullName>Bradford &amp; Bingley plc</fullName>
+                <default>false</default>
+                <label>Bradford &amp; Bingley plc</label>
+            </value>
+            <value>
+                <fullName>British Arab Commercial Bank Ltd</fullName>
+                <default>false</default>
+                <label>British Arab Commercial Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Broadcastle Bank ltd</fullName>
+                <default>false</default>
+                <label>Broadcastle Bank ltd</label>
+            </value>
+            <value>
+                <fullName>Brown Shipley &amp; Co. Ltd</fullName>
+                <default>false</default>
+                <label>Brown Shipley &amp; Co. Ltd</label>
+            </value>
+            <value>
+                <fullName>Butterfield Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Butterfield Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>CAF Bank Ltd</fullName>
+                <default>false</default>
+                <label>CAF Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Capital One Bank (Europe) plc</fullName>
+                <default>false</default>
+                <label>Capital One Bank (Europe) plc</label>
+            </value>
+            <value>
+                <fullName>Cater Allen Ltd</fullName>
+                <default>false</default>
+                <label>Cater Allen Ltd</label>
+            </value>
+            <value>
+                <fullName>Charity Bank Ltd</fullName>
+                <default>false</default>
+                <label>Charity Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>C Hoare &amp; Co Investec Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>C Hoare &amp; Co Investec Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Church House Trust plc</fullName>
+                <default>false</default>
+                <label>Church House Trust plc</label>
+            </value>
+            <value>
+                <fullName>CIBC World Markets plc</fullName>
+                <default>false</default>
+                <label>CIBC World Markets plc</label>
+            </value>
+            <value>
+                <fullName>Citibank International plc</fullName>
+                <default>false</default>
+                <label>Citibank International plc</label>
+            </value>
+            <value>
+                <fullName>Citi Financial Europe plc</fullName>
+                <default>false</default>
+                <label>Citi Financial Europe plc</label>
+            </value>
+            <value>
+                <fullName>Close Brothers Ltd</fullName>
+                <default>false</default>
+                <label>Close Brothers Ltd</label>
+            </value>
+            <value>
+                <fullName>Clydesdale Bank plc</fullName>
+                <default>false</default>
+                <label>Clydesdale Bank plc</label>
+            </value>
+            <value>
+                <fullName>Consolidated Credits Bank Ltd</fullName>
+                <default>false</default>
+                <label>Consolidated Credits Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Conversbank (UK) Limited</fullName>
+                <default>false</default>
+                <label>Conversbank (UK) Limited</label>
+            </value>
+            <value>
+                <fullName>Co-operative Bank plc, The</fullName>
+                <default>false</default>
+                <label>Co-operative Bank plc, The</label>
+            </value>
+            <value>
+                <fullName>Coutts &amp; Co</fullName>
+                <default>false</default>
+                <label>Coutts &amp; Co</label>
+            </value>
+            <value>
+                <fullName>Credit Suisse International</fullName>
+                <default>false</default>
+                <label>Credit Suisse International</label>
+            </value>
+            <value>
+                <fullName>Crown Agents Bank Ltd</fullName>
+                <default>false</default>
+                <label>Crown Agents Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>DB UK Bank Limited</fullName>
+                <default>false</default>
+                <label>DB UK Bank Limited</label>
+            </value>
+            <value>
+                <fullName>Dresdner Kleinwort Limited</fullName>
+                <default>false</default>
+                <label>Dresdner Kleinwort Limited</label>
+            </value>
+            <value>
+                <fullName>Dunbar Bank plc</fullName>
+                <default>false</default>
+                <label>Dunbar Bank plc</label>
+            </value>
+            <value>
+                <fullName>EFG Private Bank Ltd</fullName>
+                <default>false</default>
+                <label>EFG Private Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Egg Bank plc</fullName>
+                <default>false</default>
+                <label>Egg Bank plc</label>
+            </value>
+            <value>
+                <fullName>European Finance House Ltd</fullName>
+                <default>false</default>
+                <label>European Finance House Ltd</label>
+            </value>
+            <value>
+                <fullName>European Islamic Investment Bank Plc</fullName>
+                <default>false</default>
+                <label>European Islamic Investment Bank Plc</label>
+            </value>
+            <value>
+                <fullName>Europe Arab Bank Plc</fullName>
+                <default>false</default>
+                <label>Europe Arab Bank Plc</label>
+            </value>
+            <value>
+                <fullName>FBN Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>FBN Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>FCE Bank plc</fullName>
+                <default>false</default>
+                <label>FCE Bank plc</label>
+            </value>
+            <value>
+                <fullName>FIBI Bank (UK) plc</fullName>
+                <default>false</default>
+                <label>FIBI Bank (UK) plc</label>
+            </value>
+            <value>
+                <fullName>First Trust Bank</fullName>
+                <default>false</default>
+                <label>First Trust Bank</label>
+            </value>
+            <value>
+                <fullName>Gatehouse Bank plc</fullName>
+                <default>false</default>
+                <label>Gatehouse Bank plc</label>
+            </value>
+            <value>
+                <fullName>GE Capital Bank Ltd</fullName>
+                <default>false</default>
+                <label>GE Capital Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Ghana International Bank plc</fullName>
+                <default>false</default>
+                <label>Ghana International Bank plc</label>
+            </value>
+            <value>
+                <fullName>Goldman Sachs International Bank</fullName>
+                <default>false</default>
+                <label>Goldman Sachs International Bank</label>
+            </value>
+            <value>
+                <fullName>Gulf International Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Gulf International Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Habib Allied International Bank plc</fullName>
+                <default>false</default>
+                <label>Habib Allied International Bank plc</label>
+            </value>
+            <value>
+                <fullName>Harrods Bank Ltd</fullName>
+                <default>false</default>
+                <label>Harrods Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Havin Bank Ltd</fullName>
+                <default>false</default>
+                <label>Havin Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>HBOS Bank</fullName>
+                <default>false</default>
+                <label>HBOS Bank</label>
+            </value>
+            <value>
+                <fullName>Heritable Bank Ltd</fullName>
+                <default>false</default>
+                <label>Heritable Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>HFC Bank plc</fullName>
+                <default>false</default>
+                <label>HFC Bank plc</label>
+            </value>
+            <value>
+                <fullName>HSBC Bank plc</fullName>
+                <default>false</default>
+                <label>HSBC Bank plc</label>
+            </value>
+            <value>
+                <fullName>ICBC</fullName>
+                <default>false</default>
+                <label>ICBC</label>
+            </value>
+            <value>
+                <fullName>ICICI Bank</fullName>
+                <default>false</default>
+                <label>ICICI Bank</label>
+            </value>
+            <value>
+                <fullName>Intercontinental Bank (UK) plc</fullName>
+                <default>false</default>
+                <label>Intercontinental Bank (UK) plc</label>
+            </value>
+            <value>
+                <fullName>Islamic Bank of Britain plc</fullName>
+                <default>false</default>
+                <label>Islamic Bank of Britain plc</label>
+            </value>
+            <value>
+                <fullName>Ivobank Limited</fullName>
+                <default>false</default>
+                <label>Ivobank Limited</label>
+            </value>
+            <value>
+                <fullName>Jordan International Bank plc</fullName>
+                <default>false</default>
+                <label>Jordan International Bank plc</label>
+            </value>
+            <value>
+                <fullName>J P Morgan International Bank Ltd</fullName>
+                <default>false</default>
+                <label>J P Morgan International Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Julian Hodge Bank Ltd</fullName>
+                <default>false</default>
+                <label>Julian Hodge Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Kaupthing Singer &amp; Friedlander Limited</fullName>
+                <default>false</default>
+                <label>Kaupthing Singer &amp; Friedlander Limited</label>
+            </value>
+            <value>
+                <fullName>Kexim Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Kexim Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Kingdom Bank Ltd</fullName>
+                <default>false</default>
+                <label>Kingdom Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Kleinwort Benson Private Bank</fullName>
+                <default>false</default>
+                <label>Kleinwort Benson Private Bank</label>
+            </value>
+            <value>
+                <fullName>Kookmin Bank International Ltd</fullName>
+                <default>false</default>
+                <label>Kookmin Bank International Ltd</label>
+            </value>
+            <value>
+                <fullName>Liverpool Victoria Banking Services Ltd</fullName>
+                <default>false</default>
+                <label>Liverpool Victoria Banking Services Ltd</label>
+            </value>
+            <value>
+                <fullName>Lloyds TSB Bank plc</fullName>
+                <default>false</default>
+                <label>Lloyds TSB Bank plc</label>
+            </value>
+            <value>
+                <fullName>London Scottish Bank plc</fullName>
+                <default>false</default>
+                <label>London Scottish Bank plc</label>
+            </value>
+            <value>
+                <fullName>Macquarie Bank International Limited</fullName>
+                <default>false</default>
+                <label>Macquarie Bank International Limited</label>
+            </value>
+            <value>
+                <fullName>MBNA Europe Bank Ltd</fullName>
+                <default>false</default>
+                <label>MBNA Europe Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>MediCapital Bank plc</fullName>
+                <default>false</default>
+                <label>MediCapital Bank plc</label>
+            </value>
+            <value>
+                <fullName>Melli Bank plc</fullName>
+                <default>false</default>
+                <label>Melli Bank plc</label>
+            </value>
+            <value>
+                <fullName>Methodist Chapel Aid Ltd</fullName>
+                <default>false</default>
+                <label>Methodist Chapel Aid Ltd</label>
+            </value>
+            <value>
+                <fullName>Mizuho International plc</fullName>
+                <default>false</default>
+                <label>Mizuho International plc</label>
+            </value>
+            <value>
+                <fullName>Morgan Stanley Bank International Ltd</fullName>
+                <default>false</default>
+                <label>Morgan Stanley Bank International Ltd</label>
+            </value>
+            <value>
+                <fullName>National Bank of Egypt International Ltd</fullName>
+                <default>false</default>
+                <label>National Bank of Egypt International Ltd</label>
+            </value>
+            <value>
+                <fullName>National Bank of Kuwait (International) plc</fullName>
+                <default>false</default>
+                <label>National Bank of Kuwait (International) plc</label>
+            </value>
+            <value>
+                <fullName>National Westminster Bank plc</fullName>
+                <default>false</default>
+                <label>National Westminster Bank plc</label>
+            </value>
+            <value>
+                <fullName>N M Rothschild &amp; Sons Ltd</fullName>
+                <default>false</default>
+                <label>N M Rothschild &amp; Sons Ltd</label>
+            </value>
+            <value>
+                <fullName>Nomura Bank International plc</fullName>
+                <default>false</default>
+                <label>Nomura Bank International plc</label>
+            </value>
+            <value>
+                <fullName>Northern Bank Ltd</fullName>
+                <default>false</default>
+                <label>Northern Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Northern Rock plc</fullName>
+                <default>false</default>
+                <label>Northern Rock plc</label>
+            </value>
+            <value>
+                <fullName>Northern Trust Global Services Limited</fullName>
+                <default>false</default>
+                <label>Northern Trust Global Services Limited</label>
+            </value>
+            <value>
+                <fullName>Persia International Bank Ltd</fullName>
+                <default>false</default>
+                <label>Persia International Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Philippine National Bank (Europe) plc</fullName>
+                <default>false</default>
+                <label>Philippine National Bank (Europe) plc</label>
+            </value>
+            <value>
+                <fullName>Rathbone Investment Management Ltd</fullName>
+                <default>false</default>
+                <label>Rathbone Investment Management Ltd</label>
+            </value>
+            <value>
+                <fullName>Reliance Bank Ltd</fullName>
+                <default>false</default>
+                <label>Reliance Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Royal Bank of Canada Europe Ltd</fullName>
+                <default>false</default>
+                <label>Royal Bank of Canada Europe Ltd</label>
+            </value>
+            <value>
+                <fullName>Royal Bank of Scotland plc, The</fullName>
+                <default>false</default>
+                <label>Royal Bank of Scotland plc, The</label>
+            </value>
+            <value>
+                <fullName>R Raphael &amp; Sons plc</fullName>
+                <default>false</default>
+                <label>R Raphael &amp; Sons plc</label>
+            </value>
+            <value>
+                <fullName>Ruffler Bank plc</fullName>
+                <default>false</default>
+                <label>Ruffler Bank plc</label>
+            </value>
+            <value>
+                <fullName>Sainsbury’s Bank plc</fullName>
+                <default>false</default>
+                <label>Sainsbury’s Bank plc</label>
+            </value>
+            <value>
+                <fullName>Schroder &amp; Co Ltd</fullName>
+                <default>false</default>
+                <label>Schroder &amp; Co Ltd</label>
+            </value>
+            <value>
+                <fullName>Scotiabank Europe plc</fullName>
+                <default>false</default>
+                <label>Scotiabank Europe plc</label>
+            </value>
+            <value>
+                <fullName>Scottish Widows Bank plc</fullName>
+                <default>false</default>
+                <label>Scottish Widows Bank plc</label>
+            </value>
+            <value>
+                <fullName>Secure Trust Bank plc</fullName>
+                <default>false</default>
+                <label>Secure Trust Bank plc</label>
+            </value>
+            <value>
+                <fullName>SG Hambros Bank Limited</fullName>
+                <default>false</default>
+                <label>SG Hambros Bank Limited</label>
+            </value>
+            <value>
+                <fullName>Smith &amp; Williamson Investment Management Ltd</fullName>
+                <default>false</default>
+                <label>Smith &amp; Williamson Investment Management Ltd</label>
+            </value>
+            <value>
+                <fullName>Sonali Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Sonali Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Southsea Mortgage &amp; Investment Co Ltd</fullName>
+                <default>false</default>
+                <label>Southsea Mortgage &amp; Investment Co Ltd</label>
+            </value>
+            <value>
+                <fullName>Standard Bank Plc</fullName>
+                <default>false</default>
+                <label>Standard Bank Plc</label>
+            </value>
+            <value>
+                <fullName>Standard Chartered Bank</fullName>
+                <default>false</default>
+                <label>Standard Chartered Bank</label>
+            </value>
+            <value>
+                <fullName>Standard Life Bank Ltd</fullName>
+                <default>false</default>
+                <label>Standard Life Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>State Street Bank Europe Ltd</fullName>
+                <default>false</default>
+                <label>State Street Bank Europe Ltd</label>
+            </value>
+            <value>
+                <fullName>Sumitomo Mitsui Banking Corporation Europe Ltd</fullName>
+                <default>false</default>
+                <label>Sumitomo Mitsui Banking Corporation Europe Ltd</label>
+            </value>
+            <value>
+                <fullName>TD Bank Europe Ltd</fullName>
+                <default>false</default>
+                <label>TD Bank Europe Ltd</label>
+            </value>
+            <value>
+                <fullName>The Hampshire Trust plc</fullName>
+                <default>false</default>
+                <label>The Hampshire Trust plc</label>
+            </value>
+            <value>
+                <fullName>Turkish Bank (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Turkish Bank (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>UBS Bank</fullName>
+                <default>false</default>
+                <label>UBS Bank</label>
+            </value>
+            <value>
+                <fullName>Ulster Bank Ltd</fullName>
+                <default>false</default>
+                <label>Ulster Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Union Bank UK plc</fullName>
+                <default>false</default>
+                <label>Union Bank UK plc</label>
+            </value>
+            <value>
+                <fullName>United National Bank Ltd</fullName>
+                <default>false</default>
+                <label>United National Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>United Trust Bank Ltd</fullName>
+                <default>false</default>
+                <label>United Trust Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Vanquis Bank Ltd</fullName>
+                <default>false</default>
+                <label>Vanquis Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>VTB Bank Europe Plc</fullName>
+                <default>false</default>
+                <label>VTB Bank Europe Plc</label>
+            </value>
+            <value>
+                <fullName>Weatherbys Bank Ltd</fullName>
+                <default>false</default>
+                <label>Weatherbys Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Wesleyan Bank Limited</fullName>
+                <default>false</default>
+                <label>Wesleyan Bank Limited</label>
+            </value>
+            <value>
+                <fullName>West Merchant Bank Ltd</fullName>
+                <default>false</default>
+                <label>West Merchant Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Westpac Europe Limited</fullName>
+                <default>false</default>
+                <label>Westpac Europe Limited</label>
+            </value>
+            <value>
+                <fullName>Whiteaway Laidlaw Bank Ltd</fullName>
+                <default>false</default>
+                <label>Whiteaway Laidlaw Bank Ltd</label>
+            </value>
+            <value>
+                <fullName>Zenith Bank (UK) Limited</fullName>
+                <default>false</default>
+                <label>Zenith Bank (UK) Limited</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Platform</label>
+            <name>Platform</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Compute</label>
+            <name>Compute</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Networking</label>
+            <name>Networking</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Api</label>
+            <name>Api</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Getting Started</label>
+                <name>Getting_Started</name>
+            </dataCategory>
+            <dataCategory>
+                <label>User Management</label>
+                <name>User_Management</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Resources Management</label>
+                <name>Resources_Management</name>
+            </dataCategory>
+            <label>Platform Overview</label>
+            <name>Platform_Overview</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Bare Metal Cloud</label>
+            <name>Bare_Metal_Cloud</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Public</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

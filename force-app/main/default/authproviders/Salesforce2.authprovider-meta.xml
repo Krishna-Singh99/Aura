@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://cloudanalogy-6d7-dev-ed.lightning.force.com</authorizeUrl>
+    <consumerKey>3MVG9fe4g9fhX0E7khnAQsdWBd7STCeKbuDhiHqkoubg53qZxvFgWVAOyRa3vGqdcLHV7cmY0wu0Er4IBtiZ1</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>Salesforce2</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>true</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://login.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

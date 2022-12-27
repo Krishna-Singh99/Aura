@@ -9,18 +9,22 @@ public class OpportunityUtilityClass {
         opp.CloseDate = date.today();
         oppList.add(opp);
          insert oppList;
+      
       list<Product2> newProduct = new list<Product2>();
         Product2 demoProduct = new Product2 (Name = 'gandhigchasma');
       newProduct.add(demoProduct);
        insert newProduct;
+      
           Id pricebookId = Test.getStandardPricebookId();
       
          PricebookEntry standardPrice = new PricebookEntry(
             Pricebook2Id = pricebookId, Product2Id = newProduct.get(0).Id,
             UnitPrice = 10000, IsActive = true);
         insert standardPrice;
+      
         Pricebook2 prc2 = new Pricebook2(Name='Pc');
         insert prc2;
+      
          PriceBookEntry pbe  = new PriceBookEntry();
          pbe.Product2Id = newProduct.get(0).Id;
          pbe.IsActive = true;

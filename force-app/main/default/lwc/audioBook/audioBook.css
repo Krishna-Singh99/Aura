@@ -1,0 +1,265 @@
+body{
+	background-color: black;
+}
+.main{
+	height: 1000px;
+	background-image: url('https://img.freepik.com/free-photo/retro-microphone-isolated-color-background_1387-912.jpg?w=1380&t=st=1663923654~exp=1663924254~hmac=82d9bcff4fd14ca2cfd069b27d2bfe1b01bb1ddbd7cddaaa2db479c941962fc2');
+}
+
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*---- This is main code😂👍 ----*/
+/*----❤️❤️❤️ Use this code for button ❤️❤️❤️----*/
+
+label {
+  display: flex;
+  align-items: center;
+}
+input {
+  opacity: 0;
+}
+
+/* ---- toggle background in active or not active mode ---- */
+input:checked ~ span {
+  background: #14b45c;
+}
+
+input:checked ~ span:after {
+  left: 28px;
+  background: whitesmoke;
+}
+
+input:checked ~ span:active::after {
+  left: 17px;
+  background: whitesmoke;
+}
+
+input:not(:checked) ~ span:active {
+  background: #a3a3a3;
+}
+
+input:not(:checked) ~ span:active::after {
+  background: rgb(248, 248, 248);
+}
+
+.toggle_background {
+  display: flex;
+  align-items: center;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  background: #babacc;
+  border-radius: 2em;
+  border: 2px transparent solid;
+  transition: all 0.3s;
+}
+
+/* ---- toggle switching cricle design code ---- */
+.toggle_background::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 1px;
+  border-radius: 50px;
+  background: #f0f5f9;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 5px rgba(110, 110, 110, 0.253);
+}
+
+span:active:after {
+  width: 70%;
+}
+
+/* circle and vertical line in toggle background code */
+.circle-icon {
+  position: absolute;
+  right: 15%;
+  border: solid 2px rgb(95, 95, 95);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.vertical_line {
+  position: absolute;
+  left: 22%;
+  background: rgb(241, 241, 241);
+  width: 2px;
+  height: 8px;
+}
+
+/*----😂😂😂😂😂 this is fu****ing shit code and this code just for design ----*/
+/*---- this is fu****ing shit code and this code just for design ----*/
+/*---- this is fu****ing shit code and this code just for design ----*/
+/*---- this is fu****ing shit code and this code just for design ----*/
+/*---- this is fu****ing shit code and this code just for design ----*/
+body {
+  background-color: rgba(28, 3, 168, 0.09);
+  color: #212372d9;
+  display: flex;
+  font-family: roboto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.one {
+  position: relative;
+  width: 60%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  background-image: linear-gradient(#5219681c, #1b198811);
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+  height: 10px;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.circles span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle1 {
+  background-color: rgb(214, 16, 99);
+}
+
+.circle2 {
+  background-color: rgb(255, 116, 36);
+}
+
+.circle3 {
+  background-color: rgb(10, 209, 116);
+}
+
+.name {
+  position: absolute;
+  top: 4px;
+  padding: 5px;
+  box-shadow: 1px 1px 50px #503ab026;
+  border-radius: 1px;
+  max-width: 280px;
+}
+
+.name span {
+  font-size: 15px;
+  color: #3d3e84;
+  font-weight: 500;
+}
+
+.image img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+}
+
+span {
+  margin: 10px 0px 30px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 1050px) {
+  .name {
+    max-width: 200px;
+  }
+  span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .name {
+    width: 100%;
+    max-width: 90%;
+    top: 50px;
+  }
+  .one {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .name {
+    width: 100%;
+    max-width: 90%;
+    top: 50px;
+  }
+  .one {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .name span {
+    font-size: 12px;
+  }
+  span {
+    font-size: 16px;
+    max-width: 180px;
+  }
+  .one {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .name span {
+    font-size: 12px;
+  }
+  span {
+    font-size: 16px;
+    max-width: 180px;
+  }
+  .one {
+    width: 92%;
+  }
+}
+/*---- END fu****ing shit code ----*/
+/*---- END fu****ing shit code ----*/
+/*---- END fu****ing shit code ----*/
+/*---- 😂END fu****ing shit code😂 ----*/
+
+.socials {
+  font-family: sans-serif;
+  backdrop-filter: blur(30px);
+  color: rgba(47, 32, 102, 0.815);
+  background: #41355820;
+  padding: 9px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: rgb(31 21 70);
+}

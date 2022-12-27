@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>pubPulisher</componentName>
+                <identifier>c_pubPulisher1</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>pubsubSubscriber</componentName>
+                <identifier>c_pubsubSubscriber1</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region2</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>PublishRecord</masterLabel>
+    <template>
+        <name>flexipage:appHomeTemplateThreeColumns</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

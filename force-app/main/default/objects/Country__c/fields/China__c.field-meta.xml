@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>China__c</fullName>
+    <externalId>false</externalId>
+    <label>China</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Industrial and Commercial Bank of China</fullName>
+                <default>false</default>
+                <label>Industrial and Commercial Bank of China</label>
+            </value>
+            <value>
+                <fullName>Agriculture Bank of China</fullName>
+                <default>false</default>
+                <label>Agriculture Bank of China</label>
+            </value>
+            <value>
+                <fullName>Bank of China</fullName>
+                <default>false</default>
+                <label>Bank of China</label>
+            </value>
+            <value>
+                <fullName>China Construction Bank</fullName>
+                <default>false</default>
+                <label>China Construction Bank</label>
+            </value>
+            <value>
+                <fullName>China Development Bank</fullName>
+                <default>false</default>
+                <label>China Development Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Communications</fullName>
+                <default>false</default>
+                <label>Bank of Communications</label>
+            </value>
+            <value>
+                <fullName>China Citic Bank</fullName>
+                <default>false</default>
+                <label>China Citic Bank</label>
+            </value>
+            <value>
+                <fullName>Huaxia Bank</fullName>
+                <default>false</default>
+                <label>Huaxia Bank</label>
+            </value>
+            <value>
+                <fullName>China Minsheng Banking Cop.Ltd</fullName>
+                <default>false</default>
+                <label>China Minsheng Banking Cop.Ltd</label>
+            </value>
+            <value>
+                <fullName>China Guangfa Banking Co.Ltd</fullName>
+                <default>false</default>
+                <label>China Guangfa Banking Co.Ltd</label>
+            </value>
+            <value>
+                <fullName>China Merchant Bank</fullName>
+                <default>false</default>
+                <label>China Merchant Bank</label>
+            </value>
+            <value>
+                <fullName>Industrial Bank Co., Ltd</fullName>
+                <default>false</default>
+                <label>Industrial Bank Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Shanghai Pudong Development Bank Co., Ltd</fullName>
+                <default>false</default>
+                <label>Shanghai Pudong Development Bank Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Baoshang Bank</fullName>
+                <default>false</default>
+                <label>Baoshang Bank</label>
+            </value>
+            <value>
+                <fullName>Harbin Bank</fullName>
+                <default>false</default>
+                <label>Harbin Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Shanghai</fullName>
+                <default>false</default>
+                <label>Bank of Shanghai</label>
+            </value>
+            <value>
+                <fullName>Guangxi Beibu Gulf Bank Co., Ltd</fullName>
+                <default>false</default>
+                <label>Guangxi Beibu Gulf Bank Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Fudian Bank Co., Ltd</fullName>
+                <default>false</default>
+                <label>Fudian Bank Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Bank of Kunlun Co., Ltd</fullName>
+                <default>false</default>
+                <label>Bank of Kunlun Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Yinzhou Bank</fullName>
+                <default>false</default>
+                <label>Yinzhou Bank</label>
+            </value>
+            <value>
+                <fullName>HSBC Bank (China) Company Limited</fullName>
+                <default>false</default>
+                <label>HSBC Bank (China) Company Limited</label>
+            </value>
+            <value>
+                <fullName>The Bank of East Asia (China) Limited</fullName>
+                <default>false</default>
+                <label>The Bank of East Asia (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Hang Seng Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>Hang Seng Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Chong Hing Bank Shantou Branch</fullName>
+                <default>false</default>
+                <label>Chong Hing Bank Shantou Branch</label>
+            </value>
+            <value>
+                <fullName>Wing Hang Bank (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>Wing Hang Bank (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Wing Lung Bank Shenzhen Branch</fullName>
+                <default>false</default>
+                <label>Wing Lung Bank Shenzhen Branch</label>
+            </value>
+            <value>
+                <fullName>Citibank (China) Co., Ltd. Shanghai Branch</fullName>
+                <default>false</default>
+                <label>Citibank (China) Co., Ltd. Shanghai Branch</label>
+            </value>
+            <value>
+                <fullName>Bank of America Shanghai Branch</fullName>
+                <default>false</default>
+                <label>Bank of America Shanghai Branch</label>
+            </value>
+            <value>
+                <fullName>JP Morgan Chase Bank (China) Company Limited</fullName>
+                <default>false</default>
+                <label>JP Morgan Chase Bank (China) Company Limited</label>
+            </value>
+            <value>
+                <fullName>Bank of Tokyo-Mitsubishi UFJ (China) Limited</fullName>
+                <default>false</default>
+                <label>Bank of Tokyo-Mitsubishi UFJ (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Sumitomo Mitsui Banking Corporation (China) Limited</fullName>
+                <default>false</default>
+                <label>Sumitomo Mitsui Banking Corporation (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Mizuho Corporate Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>Mizuho Corporate Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>The Yamaguchi Bank Ltd. Qingdao Branch</fullName>
+                <default>false</default>
+                <label>The Yamaguchi Bank Ltd. Qingdao Branch</label>
+            </value>
+            <value>
+                <fullName>Korea Exchange Bank (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>Korea Exchange Bank (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Woori Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>Woori Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Korea Development Bank Shanghai Branch</fullName>
+                <default>false</default>
+                <label>Korea Development Bank Shanghai Branch</label>
+            </value>
+            <value>
+                <fullName>Shinhan Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>Shinhan Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Industrial Bank of Korea (China) Co.,Ltd</fullName>
+                <default>false</default>
+                <label>Industrial Bank of Korea (China) Co.,Ltd</label>
+            </value>
+            <value>
+                <fullName>Hana Bank (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>Hana Bank (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>OCBC Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>OCBC Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>United Overseas Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>United Overseas Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>DBS Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>DBS Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Raiffeisen Zentral Bank Beijing Branch</fullName>
+                <default>false</default>
+                <label>Raiffeisen Zentral Bank Beijing Branch</label>
+            </value>
+            <value>
+                <fullName>The Royal Bank of Scotland (China) Co., Ltd.</fullName>
+                <default>false</default>
+                <label>The Royal Bank of Scotland (China) Co., Ltd.</label>
+            </value>
+            <value>
+                <fullName>Standard Charterted Bank (China) Limited</fullName>
+                <default>false</default>
+                <label>Standard Charterted Bank (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Societe Generale (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>Societe Generale (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Deutsche Bank (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>Deutsche Bank (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>Commerzbank AG Shanghai Branch</fullName>
+                <default>false</default>
+                <label>Commerzbank AG Shanghai Branch</label>
+            </value>
+            <value>
+                <fullName>Intesa Sanpaolo Shanghai Branch</fullName>
+                <default>false</default>
+                <label>Intesa Sanpaolo Shanghai Branch</label>
+            </value>
+            <value>
+                <fullName>BMO Bank Motreal (China) Co., Ltd</fullName>
+                <default>false</default>
+                <label>BMO Bank Motreal (China) Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>ANZ Banking Group Limited</fullName>
+                <default>false</default>
+                <label>ANZ Banking Group Limited</label>
+            </value>
+            <value>
+                <fullName>BNP Paris (China) Limited</fullName>
+                <default>false</default>
+                <label>BNP Paris (China) Limited</label>
+            </value>
+            <value>
+                <fullName>Chinese Mercantile Bank</fullName>
+                <default>false</default>
+                <label>Chinese Mercantile Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

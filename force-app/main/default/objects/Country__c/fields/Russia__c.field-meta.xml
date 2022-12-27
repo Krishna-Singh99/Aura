@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Russia__c</fullName>
+    <externalId>false</externalId>
+    <label>Russia</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AK BARS Bank</fullName>
+                <default>false</default>
+                <label>AK BARS Bank</label>
+            </value>
+            <value>
+                <fullName>Alfa Bank</fullName>
+                <default>false</default>
+                <label>Alfa Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Khanty-Mansiysk</fullName>
+                <default>false</default>
+                <label>Bank of Khanty-Mansiysk</label>
+            </value>
+            <value>
+                <fullName>Bank of Moscow</fullName>
+                <default>false</default>
+                <label>Bank of Moscow</label>
+            </value>
+            <value>
+                <fullName>Bank Petrocommerc</fullName>
+                <default>false</default>
+                <label>Bank Petrocommerc</label>
+            </value>
+            <value>
+                <fullName>Bank Rossiya</fullName>
+                <default>false</default>
+                <label>Bank Rossiya</label>
+            </value>
+            <value>
+                <fullName>Bank Saint Petersburg</fullName>
+                <default>false</default>
+                <label>Bank Saint Petersburg</label>
+            </value>
+            <value>
+                <fullName>Bank ZENIT</fullName>
+                <default>false</default>
+                <label>Bank ZENIT</label>
+            </value>
+            <value>
+                <fullName>Citibank (Russia)</fullName>
+                <default>false</default>
+                <label>Citibank (Russia)</label>
+            </value>
+            <value>
+                <fullName>Credit Bank of Moscow</fullName>
+                <default>false</default>
+                <label>Credit Bank of Moscow</label>
+            </value>
+            <value>
+                <fullName>Gazprombank</fullName>
+                <default>false</default>
+                <label>Gazprombank</label>
+            </value>
+            <value>
+                <fullName>Globex Bank</fullName>
+                <default>false</default>
+                <label>Globex Bank</label>
+            </value>
+            <value>
+                <fullName>ING Bank (Eurasia)</fullName>
+                <default>false</default>
+                <label>ING Bank (Eurasia)</label>
+            </value>
+            <value>
+                <fullName>MDM Bank</fullName>
+                <default>false</default>
+                <label>MDM Bank</label>
+            </value>
+            <value>
+                <fullName>National Bank TRUST</fullName>
+                <default>false</default>
+                <label>National Bank TRUST</label>
+            </value>
+            <value>
+                <fullName>Nomos Bank</fullName>
+                <default>false</default>
+                <label>Nomos Bank</label>
+            </value>
+            <value>
+                <fullName>Nordea Bank (Russia)</fullName>
+                <default>false</default>
+                <label>Nordea Bank (Russia)</label>
+            </value>
+            <value>
+                <fullName>Promsvyazbank</fullName>
+                <default>false</default>
+                <label>Promsvyazbank</label>
+            </value>
+            <value>
+                <fullName>Raiffeisen Bank (Russia)</fullName>
+                <default>false</default>
+                <label>Raiffeisen Bank (Russia)</label>
+            </value>
+            <value>
+                <fullName>Rosbank</fullName>
+                <default>false</default>
+                <label>Rosbank</label>
+            </value>
+            <value>
+                <fullName>Russian Agricultural Bank</fullName>
+                <default>false</default>
+                <label>Russian Agricultural Bank</label>
+            </value>
+            <value>
+                <fullName>Russian Standard Bank</fullName>
+                <default>false</default>
+                <label>Russian Standard Bank</label>
+            </value>
+            <value>
+                <fullName>Sberbank</fullName>
+                <default>false</default>
+                <label>Sberbank</label>
+            </value>
+            <value>
+                <fullName>Sviaz-Bank</fullName>
+                <default>false</default>
+                <label>Sviaz-Bank</label>
+            </value>
+            <value>
+                <fullName>TransCreditBank</fullName>
+                <default>false</default>
+                <label>TransCreditBank</label>
+            </value>
+            <value>
+                <fullName>UniCredit Bank (Russia)</fullName>
+                <default>false</default>
+                <label>UniCredit Bank (Russia)</label>
+            </value>
+            <value>
+                <fullName>Uralsib</fullName>
+                <default>false</default>
+                <label>Uralsib</label>
+            </value>
+            <value>
+                <fullName>Vozrozhdenie Bank</fullName>
+                <default>false</default>
+                <label>Vozrozhdenie Bank</label>
+            </value>
+            <value>
+                <fullName>VTB</fullName>
+                <default>false</default>
+                <label>VTB</label>
+            </value>
+            <value>
+                <fullName>VTB24</fullName>
+                <default>false</default>
+                <label>VTB24</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

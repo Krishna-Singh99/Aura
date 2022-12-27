@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://www.facebook.com/v12.0/dialog/oauth</authorizeUrl>
+    <consumerKey>1900059703528125</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>Instagram</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://graph.facebook.com/oauth/access_token</tokenUrl>
+</AuthProvider>

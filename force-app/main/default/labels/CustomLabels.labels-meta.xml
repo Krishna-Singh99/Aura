@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Successfully_Signup</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Successfully_Signup</shortDescription>
+        <value>https://zenly-developer-edition.ap24.force.com/customer/s/login/?startURL=%2Fcustomer%2Fs%2F%3Ft%3D1637907916950</value>
+    </labels>
+    <labels>
+        <fullName>this_will_be_used_for_India_Client</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>this will be used for India Client</shortDescription>
+        <value>+91</value>
+    </labels>
+</CustomLabels>

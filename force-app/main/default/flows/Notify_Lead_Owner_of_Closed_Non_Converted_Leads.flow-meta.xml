@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Email notification to the lead owner that a closed not-converted lead has been deleted.</description>
+        <name>Email_Lead_Owner</name>
+        <label>Email Lead Owner</label>
+        <locationX>173</locationX>
+        <locationY>386</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>A closed not-converted lead {!$Record.FirstName} {!$Record.LastName} was deleted by {!$User.FirstName} {!$User.LastName}.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>Search for and select $Record &gt; Owner (User) &gt; Email. This shows as {!$Record.Owner:User.Email}. (Note: Make sure to search for the values in the search box since copying and pasting may not work.)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Deletion of Non-Converted Lead: {!$Record.FirstName} {!$Record.LastName}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <description>This flow emails leads owners when closed non-converted leads are deleted.</description>
+    <interviewLabel>Notify Lead Owner of Closed Non-Converted Leads {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Notify Lead Owner of Closed Non-Converted Leads</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Email_Lead_Owner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed - Not Converted</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

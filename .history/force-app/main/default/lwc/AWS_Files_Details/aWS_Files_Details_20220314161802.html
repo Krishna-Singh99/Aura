@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Files" icon-name="custom:custom14">
+    
+          <template for:each={details} for:item="item">
+            <p key={item.Id} style="display:inline">
+                <lightning-badge label={item.Name}></lightning-badge>
+            </p>
+          </template>
+  
+  </lightning-card>
+</template>

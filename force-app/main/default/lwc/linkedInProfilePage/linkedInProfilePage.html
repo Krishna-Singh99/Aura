@@ -1,0 +1,39 @@
+<template>
+    <ul style="font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#POST Text">POST Text</a></li>
+  <li><a href="#POST Article">POST Article</a></li>
+  <li><a href="#Help">Help</a></li>
+</ul>
+<div class="container">
+  <div class="card">
+    <div class="card__header">
+      <img src={jsonParse.ProfileUrl} alt="card__image" class="card__image" width="600">
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">Your Profile</span>
+      <h4>{jsonParse.Id}</h4>
+     <div class="demo-only" style="width:30rem">
+  <article class="slds-tile">
+    <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+      <a href="#"></a>
+    </h3>
+    <div class="slds-tile__detail">
+      <dl class="slds-list_horizontal slds-wrap">
+        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Name:</dt>
+        <dd class="slds-item_detail slds-truncate" title="Description for first label">{jsonParse.Firstname}</dd>
+        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Last Name:</dt>
+        <dd class="slds-item_detail slds-truncate" title="Description for second label">{jsonParse.LastName}</dd>
+         <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Prefered Language</dt>
+        <dd class="slds-item_detail slds-truncate" title="Description for second label">{jsonParse.Prefered_Language}</dd>
+      </dl>
+    </div>
+  </article>
+</div>
+    </div>
+  </div>
+</div>
+<c-linked-in-home-page-footer></c-linked-in-home-page-footer>
+</template>

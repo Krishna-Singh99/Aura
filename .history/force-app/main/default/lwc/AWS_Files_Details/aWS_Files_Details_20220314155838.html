@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Files" icon-name="custom:custom14">
+      <ul class="slds-m-around_medium">
+          <template for:each={details} for:item="item">
+              <li key={item.Id}>
+                  {item.id}
+              </li>
+          </template>
+      </ul>
+  </lightning-card>
+</template>

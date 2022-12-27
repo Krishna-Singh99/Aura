@@ -1,0 +1,74 @@
+<template>
+<div class="slds-grid slds-wrap main">
+  <div class="slds-col slds-size_1-of-6">
+    <span></span>
+  </div>
+  <div class="slds-col slds-size_1-of-6">
+    <span></span>
+  </div>
+  <div class="slds-col slds-size_1-of-6">
+    <span></span>
+  </div>
+  <div class="slds-col slds-size_1-of-6">
+    <span></span>
+  </div>
+  <div class="slds-col slds-size_1-of-6">
+    <span></span>
+  </div>
+  <div class="slds-col slds-size_1-of-6">
+       
+     <label>
+          <span style="    font-size: 26px;
+    font-style: oblique;
+    font-family: fantasy;">Auto Play</span>
+        <input type="checkbox">
+        <span class="toggle_background">
+          <div class="circle-icon"></div>
+          <div class="vertical_line"></div>
+
+        </span>
+
+      </label>
+  </div>
+  <div class="slds-col slds-grid slds-size_1-of-2">
+    <div class="slds-col slds-size_1-of-2">
+    
+    </div>
+    <div class="slds-col slds-size_1-of-2">
+    <audio controls id="audioplayer">
+  <source src={audiotrack2}  type="audio/mp3">
+</audio> 
+<div style="width: 50px; height: 50px;"></div>
+<div class="audio-player">
+  <div class="timeline">
+    <div class="progress"></div>
+  </div>
+</div>
+<ul id="playlist">
+    <li class="current-song" onclick={playList} name="kesariya" id="KS">Kesariya</li>
+     <li><a href="">Play2</a></li>
+      <li><a href="">Play3</a></li>
+       <li><a href="">Play4</a></li>
+</ul>
+    </div>
+    </div>
+  </div>
+
+<button class="slds-button slds-button_neutral slds-button_stateful slds-is-selected" aria-live="assertive" aria-pressed="true" aria-label="Next" onclick={next}>
+  <span class="slds-text-not-selected">
+    Next</span>
+</button>
+
+  <div class="ap-controls scrubbar-loaded">
+    <div class="scrubbar"><div class="scrub-bg">
+      <canvas class="scrubbar-type-wave--canvas scrub-bg-img preparing-transitioning-in transitioning-in" width="1172" height="75"></canvas>
+      </div><div class="scrub-buffer"></div>
+      <div class="scrub-prog" style="width: 0px;">
+        <canvas class="scrubbar-type-wave--canvas scrub-prog-img preparing-transitioning-in transitioning-in" width="1172" style="width: 1172.25px;" height="75">
+          </canvas></div><div class="scrubBox"></div><div class="scrubBox-prog"></div><div class="scrubBox-hover" style="left: 176px;">
+            </div><div class="total-time" style="top: 35.25px;">02:59</div><div class="curr-time" style="left: 0px; top: 35.25px;">00:00</div>
+            </div><div class="con-controls"><div class="the-bg"></div><div class="con-playpause-con"><div class="con-playpause"><div class="playbtn player-but">
+              <div class="the-icon-bg"></div><div class="dzsap-play-icon">
+                <svg class="svg-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="11.161px" height="12.817px" viewBox="0 0 11.161 12.817" enable-background="new 0 0 11.161 12.817" xml:space="preserve"> <path fill="#D2D6DB" d="M8.233,4.589c1.401,0.871,2.662,1.77,2.801,1.998c0.139,0.228-1.456,1.371-2.896,2.177l-4.408,2.465 c-1.44,0.805-2.835,1.474-3.101,1.484c-0.266,0.012-0.483-1.938-0.483-3.588V3.666c0-1.65,0.095-3.19,0.212-3.422 c0.116-0.232,1.875,0.613,3.276,1.484L8.233,4.589z"></path>  </svg>  
+                </div></div><div class="pausebtn player-but"><div class="the-icon-bg"></div><div class="pause-icon"> <svg class="svg-icon" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12px" height="13px" viewBox="0 0 13.415 16.333" enable-background="new 0 0 13.415 16.333" xml:space="preserve"> <path fill="#D2D6DB" d="M4.868,14.59c0,0.549-0.591,0.997-1.322,0.997H2.2c-0.731,0-1.322-0.448-1.322-0.997V1.618 c0-0.55,0.592-0.997,1.322-0.997h1.346c0.731,0,1.322,0.447,1.322,0.997V14.59z"></path> <path fill="#D2D6DB" d="M12.118,14.59c0,0.549-0.593,0.997-1.324,0.997H9.448c-0.729,0-1.322-0.448-1.322-0.997V1.619 c0-0.55,0.593-0.997,1.322-0.997h1.346c0.731,0,1.324,0.447,1.324,0.997V14.59z"></path> </svg>  </div></div> <svg class="loading-svg" width="30" height="30" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff"> <g fill="none" fill-rule="evenodd" stroke-width="2"> <circle cx="22" cy="22" r="1"> <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate> <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate> </circle> <circle cx="22" cy="22" r="1"> <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate> <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate> </circle> </g> </svg> </div></div><div class="ap-controls-right"><div class="controls-volume"><div class="volumeicon"></div><div class="volume_static"></div><div class="volume_active" style="width: 26px;"></div><div class="volume_cut"></div></div></div></div></div>
+</template>

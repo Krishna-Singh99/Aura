@@ -1,0 +1,354 @@
+template {
+  font-family: "Georgia", Arial, Tahoma, sans-serif;
+}
+
+.headerText {
+  padding: 1rem;
+}
+
+.row {
+  margin: 0;
+}
+
+.addNewSectionBlock {
+  padding: 0 1.5rem;
+}
+
+.titleText {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.fieldsSelector, .fields {
+  padding: 0 2rem;
+}
+
+.header {
+  background: #f67936;
+}
+
+.campaignHeader {
+  
+  background-position: center 0px;
+  background-repeat: repeat;
+  background-color: #5b6b76;
+  position: relative;
+  height: 150;
+  height: 10rem;
+}
+
+.logo {
+  margin: 0.5rem 0 0.8rem;
+  width: 10rem;
+}
+
+.campaignName {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 10rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0;
+  float: left;
+}
+
+.registrationName {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 8rem;
+  font-weight: 400;
+  color: #f67936;
+  margin-bottom: 0;
+  float: left;
+}
+
+.chapterTitle {
+  font-size: 1.3rem;
+  color: #f67936;
+}
+
+.fieldsTitle {
+  font-size: 1rem;
+  color: #465660;
+  display: inline-block;
+}
+
+.selectorList {
+  min-height: 10px;
+  min-width: 100px;
+  border: 1px dashed grey;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  overflow-x: scroll !important;
+  position: static;
+}
+
+.selectorList div {
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: move;
+  margin: 2px 0px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.selectorList div:hover {
+  background: #eee;
+  border-radius: 5px;
+}
+
+.selectorList div {
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: move;
+  margin: 2px 2px;
+  padding: 5px;
+  display: inline-block;
+  font-size: 0.5rem;
+  width: 98%;
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectorList span:hover {
+  background: #eee;
+  border-radius: 5px;
+}
+
+.fieldColumns {
+  min-height: 100px;
+  margin-bottom: 2rem;
+}
+
+/*.fieldColumns {
+  min-height: 100px;
+  border: 1px dashed grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  position: inherit;
+}
+
+.fieldColumns div {
+  border: 1px solid grey;
+  cursor: move;
+  margin: 2px 3px;
+  padding: 5px;
+  display: inherit;
+}
+
+.fieldColumns div:hover {
+  background: #eee;
+}*/
+
+/*.leftFieldColumn {
+  border-radius: 5px 0 0 5px !important;
+}
+
+.centerFieldColumn {
+  border-radius: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.rightFieldColumn {
+  border-radius: 0 5px 5px 0 !important;
+}*/
+
+.hidden {
+  display: none;
+}
+
+.required {
+  float: right;
+}
+
+.requiredLabel {
+  margin-right: 0.4rem;
+  font-size: 0.6rem;
+  line-height: 1.3rem;
+}
+
+.btnBlock {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.saveBtn {
+  background: #f67936 !important;
+  border: 1px solid #f67936 !important;
+}
+
+.saveBtn:hover {
+  background: #e26e2f !important;
+}
+
+.cancelBtn, .cancelModalBtn {
+  color: #f67936 !important;
+}
+
+.addNewContainer {
+  border: 0 !important;
+  padding: 5px 0 !important;
+  margin-left: 0.1rem;
+  position: absolute;
+  bottom: 10px;
+}
+
+.addNewContainer a {
+  line-height: 1.7 !important; 
+  color: #f67936 !important;
+}
+
+.sectionRegion {
+  border: 1px black solid;
+  margin: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  display:inline-block;
+  vertical-align:bottom;
+  width: 97%;
+}
+
+.sectionName {
+  margin-bottom: 0.5rem;
+  border: grey solid 1px;
+  font-size: 1.3rem;
+}
+
+.sectionDescription {
+  width: 100%;
+  height: 4rem;   
+}
+
+table {
+  width: 16rem;
+}
+
+.editLinks {
+  /*float: right;*/
+  display: block;
+  width: 10%;
+  text-align: right;
+}
+
+.fa-times, .fa-window-close {
+  position: relative;
+  line-height: 1.1rem;
+  color: #cc0033;
+}
+
+.editQuestion {
+  margin-right: 0.3rem;
+}
+
+/*modal*/
+.fieldsBlock {
+  padding: 1rem;
+}
+
+.fieldsBlock input, .fieldsBlock select, .fieldsBlock textarea {
+  margin-bottom: 1rem;
+}
+
+.fieldsBlock select {
+  height: 1.5rem;
+}
+
+.slds-text-title--caps {
+  font-weight: 100 !important;
+}
+
+.modal {
+  overflow: hidden !important;
+}
+
+.modal-dialog {
+  margin: 5rem auto !important;
+}
+
+.modal-title {
+  color: #f67936;
+}
+
+.modal-open {
+  overflow: scroll;
+}
+
+.labelSpan {
+  margin-left: 0.5rem;
+}
+
+/*fields table*/
+.fieldsTable {
+  width: 98%;
+  padding: 0 2rem;
+  min-height: 100px;
+  margin: 8px 14px;
+}
+
+.fieldsTable td {
+  border: 1px dashed grey;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.fieldsTable .fieldContainer {
+  border: 1px solid grey;
+  cursor: move;
+  margin: 2px 3px;
+  padding: 5px;
+  display: flex;
+}
+
+.fieldsTable .fieldContainer:hover {
+  background: #eee;
+}
+
+.fieldsTable tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.fieldsTable tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.clsSection {
+  position: absolute;
+  right: -8px;
+  top: -5px;
+}
+
+.sectionRegion .col-lg-12, .sectionRegion .col-sm-12, .sectionRegion .col-xs-12 {
+  padding: 0 !important;
+}
+
+.newSFField {
+  position: absolute;
+  bottom: -2.5rem;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.requiredCheckboxLabel {
+  margin-left: 0.5rem;
+}
+
+.requiredEmpty {
+  border-color: red;
+}
+
+select[multiple] {
+  height: 100px !important;
+}
+
+.fieldObjectLabelDiv, .fieldLabelDiv {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}

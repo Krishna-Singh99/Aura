@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>India__c</fullName>
+    <externalId>false</externalId>
+    <label>India</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Axis Bank</fullName>
+                <default>false</default>
+                <label>Axis Bank</label>
+            </value>
+            <value>
+                <fullName>Bandhan Bank</fullName>
+                <default>false</default>
+                <label>Bandhan Bank</label>
+            </value>
+            <value>
+                <fullName>HDFC Bank</fullName>
+                <default>false</default>
+                <label>HDFC Bank</label>
+            </value>
+            <value>
+                <fullName>ICICI Bank</fullName>
+                <default>false</default>
+                <label>ICICI Bank</label>
+            </value>
+            <value>
+                <fullName>IndusInd Bank</fullName>
+                <default>false</default>
+                <label>IndusInd Bank</label>
+            </value>
+            <value>
+                <fullName>IDFC FIRST Bank</fullName>
+                <default>false</default>
+                <label>IDFC FIRST Bank</label>
+            </value>
+            <value>
+                <fullName>Jammu &amp; Kashmir Bank</fullName>
+                <default>false</default>
+                <label>Jammu &amp; Kashmir Bank</label>
+            </value>
+            <value>
+                <fullName>Karnataka Bank</fullName>
+                <default>false</default>
+                <label>Karnataka Bank</label>
+            </value>
+            <value>
+                <fullName>Karur Vysya Bank</fullName>
+                <default>false</default>
+                <label>Karur Vysya Bank</label>
+            </value>
+            <value>
+                <fullName>Kotak Mahindra Bank</fullName>
+                <default>false</default>
+                <label>Kotak Mahindra Bank</label>
+            </value>
+            <value>
+                <fullName>Nainital Bank</fullName>
+                <default>false</default>
+                <label>Nainital Bank</label>
+            </value>
+            <value>
+                <fullName>South Indian Bank</fullName>
+                <default>false</default>
+                <label>South Indian Bank</label>
+            </value>
+            <value>
+                <fullName>Tamilnad Mercantile Bank</fullName>
+                <default>false</default>
+                <label>Tamilnad Mercantile Bank</label>
+            </value>
+            <value>
+                <fullName>YES Bank</fullName>
+                <default>false</default>
+                <label>YES Bank</label>
+            </value>
+            <value>
+                <fullName>IDBI Bank</fullName>
+                <default>false</default>
+                <label>IDBI Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

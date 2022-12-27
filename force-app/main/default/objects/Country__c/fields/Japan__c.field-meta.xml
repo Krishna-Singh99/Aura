@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Japan__c</fullName>
+    <externalId>false</externalId>
+    <label>Japan</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>114Bank</fullName>
+                <default>false</default>
+                <label>114Bank</label>
+            </value>
+            <value>
+                <fullName>ANZ Japan</fullName>
+                <default>false</default>
+                <label>ANZ Japan</label>
+            </value>
+            <value>
+                <fullName>Asahi Bank</fullName>
+                <default>false</default>
+                <label>Asahi Bank</label>
+            </value>
+            <value>
+                <fullName>Ashikaga Bank</fullName>
+                <default>false</default>
+                <label>Ashikaga Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Kansai</fullName>
+                <default>false</default>
+                <label>Bank of Kansai</label>
+            </value>
+            <value>
+                <fullName>Bank of Nagoya</fullName>
+                <default>false</default>
+                <label>Bank of Nagoya</label>
+            </value>
+            <value>
+                <fullName>Bank of Okinawa</fullName>
+                <default>false</default>
+                <label>Bank of Okinawa</label>
+            </value>
+            <value>
+                <fullName>Bank of the Ryukyus</fullName>
+                <default>false</default>
+                <label>Bank of the Ryukyus</label>
+            </value>
+            <value>
+                <fullName>Bank of Tokyo-Mitsubishi</fullName>
+                <default>false</default>
+                <label>Bank of Tokyo-Mitsubishi</label>
+            </value>
+            <value>
+                <fullName>Bank of Yokohama</fullName>
+                <default>false</default>
+                <label>Bank of Yokohama</label>
+            </value>
+            <value>
+                <fullName>Chiba Bank</fullName>
+                <default>false</default>
+                <label>Chiba Bank</label>
+            </value>
+            <value>
+                <fullName>Citibank Japan</fullName>
+                <default>false</default>
+                <label>Citibank Japan</label>
+            </value>
+            <value>
+                <fullName>Daiwa Bank</fullName>
+                <default>false</default>
+                <label>Daiwa Bank</label>
+            </value>
+            <value>
+                <fullName>Fukui Bank</fullName>
+                <default>false</default>
+                <label>Fukui Bank</label>
+            </value>
+            <value>
+                <fullName>Fukuoka City Bank</fullName>
+                <default>false</default>
+                <label>Fukuoka City Bank</label>
+            </value>
+            <value>
+                <fullName>Hachijuni Bank</fullName>
+                <default>false</default>
+                <label>Hachijuni Bank</label>
+            </value>
+            <value>
+                <fullName>Hokkoku Bank</fullName>
+                <default>false</default>
+                <label>Hokkoku Bank</label>
+            </value>
+            <value>
+                <fullName>Hokuetsu Bank</fullName>
+                <default>false</default>
+                <label>Hokuetsu Bank</label>
+            </value>
+            <value>
+                <fullName>Hokuriku Bank</fullName>
+                <default>false</default>
+                <label>Hokuriku Bank</label>
+            </value>
+            <value>
+                <fullName>Hyakugo Bank</fullName>
+                <default>false</default>
+                <label>Hyakugo Bank</label>
+            </value>
+            <value>
+                <fullName>Iyo Bank</fullName>
+                <default>false</default>
+                <label>Iyo Bank</label>
+            </value>
+            <value>
+                <fullName>Joyo Bank</fullName>
+                <default>false</default>
+                <label>Joyo Bank</label>
+            </value>
+            <value>
+                <fullName>Kagawa Bank</fullName>
+                <default>false</default>
+                <label>Kagawa Bank</label>
+            </value>
+            <value>
+                <fullName>Kanto Bank</fullName>
+                <default>false</default>
+                <label>Kanto Bank</label>
+            </value>
+            <value>
+                <fullName>Keiyo Bank</fullName>
+                <default>false</default>
+                <label>Keiyo Bank</label>
+            </value>
+            <value>
+                <fullName>Mie Bank</fullName>
+                <default>false</default>
+                <label>Mie Bank</label>
+            </value>
+            <value>
+                <fullName>Miyazaki Bank</fullName>
+                <default>false</default>
+                <label>Miyazaki Bank</label>
+            </value>
+            <value>
+                <fullName>Mizuho Bank</fullName>
+                <default>false</default>
+                <label>Mizuho Bank</label>
+            </value>
+            <value>
+                <fullName>Ogaki Kyoritsu Bank</fullName>
+                <default>false</default>
+                <label>Ogaki Kyoritsu Bank</label>
+            </value>
+            <value>
+                <fullName>OitaBank</fullName>
+                <default>false</default>
+                <label>OitaBank</label>
+            </value>
+            <value>
+                <fullName>People’s Finance Corporation</fullName>
+                <default>false</default>
+                <label>People’s Finance Corporation</label>
+            </value>
+            <value>
+                <fullName>Postal Savings Bureau, Ministry of Posts and Telecommunications</fullName>
+                <default>false</default>
+                <label>Postal Savings Bureau, Ministry of Posts and Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Saga Bank</fullName>
+                <default>false</default>
+                <label>Saga Bank</label>
+            </value>
+            <value>
+                <fullName>San-in Godo Bank</fullName>
+                <default>false</default>
+                <label>San-in Godo Bank</label>
+            </value>
+            <value>
+                <fullName>Shiga Bank</fullName>
+                <default>false</default>
+                <label>Shiga Bank</label>
+            </value>
+            <value>
+                <fullName>Shimizu Bank</fullName>
+                <default>false</default>
+                <label>Shimizu Bank</label>
+            </value>
+            <value>
+                <fullName>Shinwa Bank</fullName>
+                <default>false</default>
+                <label>Shinwa Bank</label>
+            </value>
+            <value>
+                <fullName>Shizuoka Bank</fullName>
+                <default>false</default>
+                <label>Shizuoka Bank</label>
+            </value>
+            <value>
+                <fullName>Shokusan Bank</fullName>
+                <default>false</default>
+                <label>Shokusan Bank</label>
+            </value>
+            <value>
+                <fullName>Shonai Bank Ltd.</fullName>
+                <default>false</default>
+                <label>Shonai Bank Ltd.</label>
+            </value>
+            <value>
+                <fullName>Standard Chartered</fullName>
+                <default>false</default>
+                <label>Standard Chartered</label>
+            </value>
+            <value>
+                <fullName>Sumitomo Mitsui Banking Corporation (SMBC)</fullName>
+                <default>false</default>
+                <label>Sumitomo Mitsui Banking Corporation (SMBC)</label>
+            </value>
+            <value>
+                <fullName>Sumitomo Trust &amp; Banking</fullName>
+                <default>false</default>
+                <label>Sumitomo Trust &amp; Banking</label>
+            </value>
+            <value>
+                <fullName>Tomin Bank</fullName>
+                <default>false</default>
+                <label>Tomin Bank</label>
+            </value>
+            <value>
+                <fullName>Towa Bank</fullName>
+                <default>false</default>
+                <label>Towa Bank</label>
+            </value>
+            <value>
+                <fullName>UFJ Bank (United Financial of Japan)</fullName>
+                <default>false</default>
+                <label>UFJ Bank (United Financial of Japan)</label>
+            </value>
+            <value>
+                <fullName>Yamagata Bank</fullName>
+                <default>false</default>
+                <label>Yamagata Bank</label>
+            </value>
+            <value>
+                <fullName>Yamagata Shiawase Bank</fullName>
+                <default>false</default>
+                <label>Yamagata Shiawase Bank</label>
+            </value>
+            <value>
+                <fullName>Yamanashi Chuo Bank</fullName>
+                <default>false</default>
+                <label>Yamanashi Chuo Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
